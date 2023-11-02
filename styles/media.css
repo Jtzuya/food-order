@@ -1,0 +1,38 @@
+@media (min-width: 768px) {
+    .fo-main {
+        padding: 24px 0;
+    }
+
+    .fo-form-wrapper {
+        margin: 0 0 20px;
+    }
+
+    .fo-slider__btn {
+        display: grid!important;
+    }
+}
+
+@media (min-width: 1280px) {
+    .fo-max-width {
+        max-width: 1024px;
+        margin: 0 auto;
+    }
+}
+
+@media (min-width: 1440px) {
+    .fo-max-width {
+        max-width: 1280px;
+        margin: 0 auto;
+    }
+
+    .fo-menus {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (min-width: 1680px) {
+    .fo-max-width {
+        max-width: 1440px;
+        margin: 0 auto;
+    }
+}

@@ -1,0 +1,10 @@
+.fo-hidden-virtual-dom {
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    display: none;
+    opacity: 0;
+    visibility: hidden;
+    transform: scale(0);
+}

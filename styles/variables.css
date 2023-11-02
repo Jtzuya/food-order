@@ -1,0 +1,116 @@
+@font-face {
+    font-family: 'Erply Ladna';
+    font-weight: 400;
+    src: url("https://erply.com/wp-content/themes/2022-InventoryTheme/build/css/fonts/ErplyLadna-Regular.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: 'Erply Ladna';
+    font-weight: 500;
+    src: url("https://erply.com/wp-content/themes/2022-InventoryTheme/build/css/fonts/ErplyLadna-Medium.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: 'Erply Ladna';
+    font-weight: 600;
+    src: url("https://erply.com/wp-content/themes/2022-InventoryTheme/build/css/fonts/ErplyLadna-SemiBold.woff2") format("woff2");
+}
+
+:root {
+    font-size: 62.5%;
+
+    --base-font: 'Erply Ladna', Arial, Helvetica, sans-serif;
+
+    --clr-text-primary: hsl(0, 0%, 18%);
+    --clr-text-secondary: hsl(250, 4%, 27%);
+    --clr-text-tertiary: hsl(0, 0%, 35%);
+    --clr-text-cta: hsl(152, 99%, 36%);
+    --clr-text-disabled: hsl(0, 0%, 60%);
+    --clr-base-green: hsl(152, 56%, 57%);
+    --clr-base-cta: hsl(0, 0%, 6%);
+    --clr-base-white: hsl(0, 0%, 100%);
+    --clr-base-black: hsl(0, 0%, 0%);
+    --clr-btn-primary: hsl(0, 0%, 100%);
+
+    --clr-border: hsl(0, 0%, 100%);
+    --shadow: 0 1px 2px rgba(16 24 30 / 5%);
+
+    --accent-light-orange: hsl(36, 83%, 93%);
+    --accent-light-blue: hsl(197, 50%, 95%);
+    --accent-light-purple: hsl(261, 88%, 97%);
+    --accent-light-red: hsl(4, 73%, 96%);
+    --accent-light-green: hsl(67, 45%, 92%);
+
+    --clr-neutral-50: hsl(0, 0%, 95%);
+    --clr-neutral-100: hsl(210, 31%, 95%);
+    --clr-neutral-200: hsl(215, 27%, 91%);
+
+    --chevron-shadow: 0 1px 2px rgba(0 0 0 / 6%), 0 1px 3px rgba(220 43 11 / 11%);
+    --chevron-bg: hsl(0, 0%, 100%);
+
+    --rounded-pill-xs: 12px;
+    --rounded-pill-sm: 40px;
+    --rounded-pill-md: 48px;
+
+    --weight-normal: 400;
+    --weight-medium: 500;
+    --weight-semi-bold: 600;
+    --weight-bold: 700;
+
+    --duration: 0.8s;
+    --scale: 1;
+}
+
+#system_appearance:checked ~ * {
+    --clr-text-primary: hsl(0, 0%, 96%);
+    --clr-text-secondary: hsl(240, 3%, 81%);
+    --clr-text-tertiary: hsl(0, 0%, 96%);
+    --clr-base-cta: hsl(0, 0%, 95%);
+    --clr-btn-primary: hsl(0, 0%, 0%);
+
+    --clr-border: hsl(240, 3%, 30%);
+    --shadow: 0 1px 2px 0 hsla(0, 0%, 100%, 0.05);
+    
+    --accent-light-orange: hsl(37, 22%, 24%);
+    --accent-light-blue: hsl(195, 18%, 22%);
+    --accent-light-purple: hsl(261, 20%, 22%);
+    --accent-light-red: hsl(6, 17%, 22%);
+    --accent-light-green: hsl(67, 17%, 21%);
+
+    --chevron-bg: hsl(240, 3%, 30%);
+
+    --clr-neutral-50: hsl(270, 3%, 13%);
+}
+
+#system_appearance:checked ~ .fo-body::after {
+    height: 150%!important;
+    width: 150%!important;
+}
+
+@media (prefers-color-scheme: dark) {
+    * {
+        --clr-text-primary: hsl(0, 0%, 96%);
+        --clr-text-secondary: hsl(240, 3%, 81%);
+        /* --clr-text-tertiary: hsl(0, 0%, 35%); */
+        --clr-text-tertiary: hsl(0, 0%, 96%);
+        --clr-base-cta: hsl(0, 0%, 95%);
+
+        --clr-border: hsl(240, 3%, 30%);
+        --shadow-border: 0 1px 2px 0 hsla(0, 0%, 100%, 0.05);
+        
+        --accent-light-orange: hsl(37, 22%, 24%);
+        --accent-light-blue: hsl(195, 18%, 22%);
+        --accent-light-purple: hsl(261, 20%, 22%);
+        --accent-light-red: hsl(6, 17%, 22%);
+        --accent-light-green: hsl(67, 17%, 21%);
+
+        --chevron-bg: hsl(240, 3%, 30%);
+        
+        --clr-neutral-50: hsl(270, 3%, 13%);
+    }
+
+    .fo-body::after {
+        height: 150%!important;
+        width: 150%!important;
+    }
+}

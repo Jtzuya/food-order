@@ -1,0 +1,37 @@
+/* MENU SLIDER
+#categories_slider_1:checked ~ .fo-body [for="categories_slider_1"].fo-slider__card,
+#categories_slider_2:checked ~ .fo-body [for="categories_slider_2"].fo-slider__card,
+#categories_slider_3:checked ~ .fo-body [for="categories_slider_3"].fo-slider__card,
+#categories_slider_4:checked ~ .fo-body [for="categories_slider_4"].fo-slider__card,
+#categories_slider_5:checked ~ .fo-body [for="categories_slider_5"].fo-slider__card,
+#categories_slider_6:checked ~ .fo-body [for="categories_slider_6"].fo-slider__card,
+#categories_slider_7:checked ~ .fo-body [for="categories_slider_7"].fo-slider__card,
+#categories_slider_8:checked ~ .fo-body [for="categories_slider_8"].fo-slider__card { background-color: var(--clr-text-cta); }
+
+#categories_slider_1:checked ~ .fo-body [for="categories_slider_1"] .fo-slider__img-wrapper,
+#categories_slider_2:checked ~ .fo-body [for="categories_slider_2"] .fo-slider__img-wrapper,
+#categories_slider_3:checked ~ .fo-body [for="categories_slider_3"] .fo-slider__img-wrapper,
+#categories_slider_4:checked ~ .fo-body [for="categories_slider_4"] .fo-slider__img-wrapper,
+#categories_slider_5:checked ~ .fo-body [for="categories_slider_5"] .fo-slider__img-wrapper,
+#categories_slider_6:checked ~ .fo-body [for="categories_slider_6"] .fo-slider__img-wrapper,
+#categories_slider_7:checked ~ .fo-body [for="categories_slider_7"] .fo-slider__img-wrapper,
+#categories_slider_8:checked ~ .fo-body [for="categories_slider_8"] .fo-slider__img-wrapper { background-color: var(--clr-base-green); }
+
+#categories_slider_1:checked ~ .fo-body [for="categories_slider_1"] .fo-slider__text,
+#categories_slider_2:checked ~ .fo-body [for="categories_slider_2"] .fo-slider__text,
+#categories_slider_3:checked ~ .fo-body [for="categories_slider_3"] .fo-slider__text,
+#categories_slider_4:checked ~ .fo-body [for="categories_slider_4"] .fo-slider__text,
+#categories_slider_5:checked ~ .fo-body [for="categories_slider_5"] .fo-slider__text,
+#categories_slider_6:checked ~ .fo-body [for="categories_slider_6"] .fo-slider__text,
+#categories_slider_7:checked ~ .fo-body [for="categories_slider_7"] .fo-slider__text,
+#categories_slider_8:checked ~ .fo-body [for="categories_slider_8"] .fo-slider__text {
+    color: #fff;
+    font-weight: var(--weight-medium);
+} */
+
+/* pill */
+#stacked_pill_1:checked ~ .fo-body [for="stacked_pill_1"].fo-pill,
+#stacked_pill_2:checked ~ .fo-body [for="stacked_pill_2"].fo-pill,
+#stacked_pill_3:checked ~ .fo-body [for="stacked_pill_3"].fo-pill {
+    color: var(--clr-text-primary);
+}
