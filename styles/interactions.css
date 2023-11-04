@@ -35,3 +35,7 @@
 #stacked_pill_3:checked ~ .fo-body [for="stacked_pill_3"].fo-pill {
     color: var(--clr-text-primary);
 }
+
+#header_menu:checked ~ .fo-slider__menu {
+    right: 0;
+}

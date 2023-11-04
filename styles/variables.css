@@ -93,6 +93,10 @@
     width: 150%!important;
 }
 
+#system_appearance:checked ~ .fo-slider__menu {
+    background-color: var(--clr-base-black);
+}
+
 @media (prefers-color-scheme: dark) {
     * {
         --clr-text-primary: hsl(0, 0%, 96%);
@@ -121,5 +125,9 @@
     .fo-body::after {
         height: 150%!important;
         width: 150%!important;
+    }
+
+    #system_appearance:checked ~ .fo-slider__menu {
+        background-color: var(--clr-base-white);
     }
 }
