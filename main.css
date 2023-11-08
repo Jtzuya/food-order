@@ -593,7 +593,11 @@ fieldset input {
     color: var(--clr-text-primary);
 }
 
-form button {
+form button,
+.fo-form__redirect {
+    text-decoration: none;
+    background-color: var(--clr-neutral-100);
+    text-align: center;
     padding: 12px 18px;
     border-radius: 48px;
     border: none;
