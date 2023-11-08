@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payments</title>
+    <link rel="stylesheet" href="./styles/variables.css">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="./styles/media.css">
+    <link rel="stylesheet" href="./styles/interactions.css">
+    <link rel="stylesheet" href="./styles/virtual.css">
+</head>
+<body>
+    <div class="fo-body fo-body--payment">
+        <header class="fo-payment__header">
+            <div class="fo-payment__header-wrapper">
+                <a class="fo-payment__logo-wrapper">
+                    <span class="fo-payment__logo">
+                        <svg width="24" height="22" viewBox="0 0 24 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 0L14.6942 8.2918H23.4127L16.3593 13.4164L19.0534 21.7082L12 16.5836L4.94658 21.7082L7.64074 13.4164L0.587322 8.2918H9.30583L12 0Z" fill="#FCF0DE"/>
+                        </svg>                            
+                    </span>
+                    <span class="fo-payment__text">Apolo Club</span>
+                </a>
+
+                <a href="#" class="fo-payment__logout">
+                    <span class="fo-payment__signout-logo">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M4.25 4C4.25 3.58579 4.58579 3.25 5 3.25H14C14.4142 3.25 14.75 3.58579 14.75 4C14.75 4.41421 14.4142 4.75 14 4.75H5.75V20.25H14C14.4142 20.25 14.75 20.5858 14.75 21C14.75 21.4142 14.4142 21.75 14 21.75H5C4.58579 21.75 4.25 21.4142 4.25 21V4ZM15.6364 16.1968C15.3435 15.9039 15.3435 15.4291 15.6364 15.1362L17.6891 13.0835H12C11.5858 13.0835 11.25 12.7477 11.25 12.3335C11.25 11.9193 11.5858 11.5835 12 11.5835H17.6897L15.6364 9.53017C15.3435 9.23727 15.3435 8.7624 15.6364 8.46951C15.9293 8.17661 16.4042 8.17661 16.6971 8.46951L20.0304 11.8028C20.1023 11.8748 20.1581 11.9598 20.1955 12.0523C20.2118 12.0927 20.2246 12.1344 20.2337 12.1772L20.2355 12.1862C20.2451 12.2342 20.2501 12.2834 20.2501 12.3332C20.2501 12.3571 20.2489 12.3809 20.2467 12.4045C20.2294 12.5889 20.1453 12.7539 20.0188 12.8751L16.6971 16.1968C16.4042 16.4897 15.9293 16.4897 15.6364 16.1968ZM8.5 11.75C8.08579 11.75 7.75 12.0858 7.75 12.5C7.75 12.9142 8.08579 13.25 8.5 13.25C8.91421 13.25 9.25 12.9142 9.25 12.5C9.25 12.0858 8.91421 11.75 8.5 11.75Z" fill="#F68A1F"/>
+                        </svg>                            
+                    </span>
+                    <span class="fo-payment__text">17:26</span>
+                </a>
+            </div>
+        </header>
+
+        <main class="fo-payment__main">
+            <form class="fo-payment__form">
+                <div class="fo-payment__order">
+                    <span class="fo-payment__body-text">Order:</span>
+                    <span class="fo-payment__body-text">4060963228 Vapiano Solaris PRE2</span>
+                    <span class="fo-payment__chevron-ico">
+                        <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12.6475 14.1465L15.9404 10.8536C16.2553 10.5386 16.0322 10.0001 15.5868 10.0001L9.00101 10.0001C8.55556 10.0001 8.33247 10.5386 8.64746 10.8536L11.9404 14.1465C12.1356 14.3418 12.4522 14.3418 12.6475 14.1465Z" fill="#101010"/>
+                        </svg>                            
+                    </span>
+                </div>
+
+                <div class="fo-payment__main-content">
+                    <div class="fo-payment__due">
+                        <span class="fo-payment__body-heading">Due:</span>
+                        <span class="fo-payment__body-heading">10&comma;90 &euro;</span>
+                    </div>
+                    <div class="fo-payment__selection">
+                        <button class="fo-payment__misc">
+                            <span class="fo-payment__misc-ico">
+                                <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M20.8334 7.0765H18.7534C18.9735 6.66796 19.087 6.21053 19.0834 5.7465C19.0834 4.99594 18.7853 4.27612 18.2545 3.74539C17.7238 3.21466 17.004 2.9165 16.2534 2.9165C15.48 2.9555 14.7322 3.20657 14.0919 3.64224C13.4516 4.0779 12.9436 4.68135 12.6234 5.3865L12.5034 5.6165L12.3834 5.3865C12.0632 4.68135 11.5552 4.0779 10.9149 3.64224C10.2747 3.20657 9.52687 2.9555 8.75342 2.9165C8.00285 2.9165 7.28303 3.21466 6.7523 3.74539C6.22158 4.27612 5.92342 4.99594 5.92342 5.7465C5.91986 6.21053 6.03336 6.66796 6.25342 7.0765H4.17342C3.9745 7.0765 3.78374 7.15552 3.64309 7.29617C3.50243 7.43683 3.42342 7.62759 3.42342 7.8265V11.9965C3.42342 12.1954 3.50243 12.3862 3.64309 12.5268C3.78374 12.6675 3.9745 12.7465 4.17342 12.7465H5.08342V20.3265C5.08342 20.5254 5.16243 20.7162 5.30309 20.8568C5.44374 20.9975 5.6345 21.0765 5.83342 21.0765H19.1734C19.3723 21.0765 19.5631 20.9975 19.7037 20.8568C19.8444 20.7162 19.9234 20.5254 19.9234 20.3265V12.7465H20.8334C21.0323 12.7465 21.2231 12.6675 21.3637 12.5268C21.5044 12.3862 21.5834 12.1954 21.5834 11.9965V7.8265C21.5834 7.72801 21.564 7.63049 21.5263 7.53949C21.4886 7.4485 21.4334 7.36582 21.3637 7.29617C21.2941 7.22653 21.2114 7.17129 21.1204 7.13359C21.0294 7.0959 20.9319 7.0765 20.8334 7.0765ZM7.83342 4.8065C8.08265 4.55703 8.42077 4.41674 8.77342 4.4165C9.27682 4.45791 9.75897 4.63767 10.1666 4.93591C10.5743 5.23414 10.8916 5.63926 11.0834 6.1065C11.2551 6.42826 11.4022 6.76255 11.5234 7.1065H8.75342C8.4905 7.10633 8.23353 7.02823 8.01498 6.88207C7.79643 6.73592 7.6261 6.52827 7.52551 6.28535C7.42492 6.04244 7.39858 5.77516 7.44983 5.51728C7.50107 5.25941 7.62759 5.0225 7.81342 4.8365L7.83342 4.8065ZM11.7734 19.5765H6.58342V12.7465H11.7534L11.7734 19.5765ZM11.7734 11.2465H4.92342V8.5765H11.7534L11.7734 11.2465ZM13.9634 6.1065C14.1553 5.63926 14.4726 5.23414 14.8802 4.93591C15.2879 4.63767 15.77 4.45791 16.2734 4.4165C16.6262 4.4165 16.9644 4.55663 17.2139 4.80605C17.4633 5.05548 17.6034 5.39377 17.6034 5.7465C17.6034 6.09924 17.4633 6.43753 17.2139 6.68696C16.9644 6.93638 16.6262 7.0765 16.2734 7.0765H13.5034C13.626 6.74279 13.7731 6.41858 13.9434 6.1065H13.9634ZM18.4434 19.5765H13.2534V12.7465H18.4234L18.4434 19.5765ZM20.1034 11.2465H13.2534V8.5765H20.0834L20.1034 11.2465Z" fill="#444349"/>
+                                </svg>                                    
+                            </span>
+                            <span class="fo-payment__btn-text">Gift Cards and Discounts</span>
+                            <span class="fo-payment__misc-ico">
+                                <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12.6475 14.1465L15.9404 10.8536C16.2553 10.5386 16.0322 10.0001 15.5868 10.0001L9.00101 10.0001C8.55556 10.0001 8.33247 10.5386 8.64746 10.8536L11.9404 14.1465C12.1356 14.3418 12.4522 14.3418 12.6475 14.1465Z" fill="#444349"/>
+                                </svg>                                                                      
+                            </span>
+                        </button>
+
+                        <div class="fo-payment__methods">
+                            <input type="radio" name="payment_method" id="payment_method_card" hidden>
+                            <input type="radio" name="payment_method" id="payment_method_bank" hidden checked>
+                            <input type="radio" name="payment_method" id="payment_method_change" hidden>
+
+                            <span class="fo-payment__body-text fo-payment__body-text--underline fo-payment__body-text--blocked">
+                                <span>Select payment method</span>
+
+                                <label for="payment_method_change" class="fo-payment__change">CHANGE</label>
+                            </span>
+
+                            <label for="payment_method_card" class="fo-payment__method fo-payment__method--card" tabindex="0">
+                                <span class="fo-payment__body-text">PAYMENT WITH CARD</span>
+                                <span class="fo-payment__radio">&nbsp;</span>
+                            </label>
+
+                            <label for="payment_method_bank" class="fo-payment__method fo-payment__method--bank" tabindex="0">
+                                <span class="fo-payment__body-text">PAYMENT WITH BANK</span>
+                                <span class="fo-payment__radio">&nbsp;</span>
+                            </label>
+
+                            <div class="fo-payment__methods-for fo-payment__methods-for--card">
+                                <div class="fo-payment__fieldset">
+                                    <fieldset>
+                                        <legend>Card number</legend>
+                                        <span class="fo-icon">
+                                            <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M13.6251 12.0834C13.2799 12.0834 13.0001 12.3632 13.0001 12.7084C13.0001 13.0536 13.2799 13.3334 13.6251 13.3334H15.7084C16.0536 13.3334 16.3334 13.0536 16.3334 12.7084C16.3334 12.3632 16.0536 12.0834 15.7084 12.0834H13.6251ZM4.45841 4.16675C3.19276 4.16675 2.16675 5.19276 2.16675 6.45841V13.5417C2.16675 14.8074 3.19276 15.8334 4.45841 15.8334H16.5417C17.8074 15.8334 18.8334 14.8074 18.8334 13.5417V6.45841C18.8334 5.19276 17.8074 4.16675 16.5417 4.16675H4.45841ZM3.41675 13.5417V9.16675H17.5834V13.5417C17.5834 14.117 17.117 14.5834 16.5417 14.5834H4.45842C3.88312 14.5834 3.41675 14.117 3.41675 13.5417ZM3.41675 7.91675V6.45841C3.41675 5.88312 3.88312 5.41675 4.45841 5.41675H16.5417C17.117 5.41675 17.5834 5.88312 17.5834 6.45841V7.91675H3.41675Z" fill="#989898"/>
+                                            </svg>                                        
+                                        </span>
+                                        <input type="text" placeholder="1234 1234 1234 123">
+                                    </fieldset>
+                                </div>
+                                <div class="fo-payment__fieldset fo-payment__fieldset--split">
+                                    <fieldset>
+                                        <legend>Valid thru</legend>
+                                        <input type="text" placeholder="KK/AA">
+                                    </fieldset>
+    
+                                    <fieldset>
+                                        <legend>CVC</legend>
+                                        <input type="text" placeholder="CVC">
+                                    </fieldset>
+                                </div>
+                            </div>
+
+                            <div class="fo-payment__methods-for fo-payment__methods-for--bank">
+                                <input type="radio" name="bank" id="Swedbank_Eesti" hidden>
+                                <input type="radio" name="bank" id="SEB_Eesti" hidden>
+                                <input type="radio" name="bank" id="LHV" hidden>
+                                <input type="radio" name="bank" id="Luminor_Eesti" hidden>
+                                <input type="radio" name="bank" id="Coop_Bank" hidden>
+                                <input type="radio" name="bank" id="Citadele_Eesti" hidden>
+                                <input type="radio" name="bank" id="Revolut" hidden>
+
+                                <span class="fo-payment__body-text fo-payment__body-text--underline fo-payment__body-text--blocked">
+                                    <span>&nbsp;</span>
+                                    <span class="fo-payment__bank-subregion-wrapper">
+                                        <select name="subregion" id="subregion" class="fo-payment__bank-subregion">
+                                            <option value="">EE</option>
+                                            <option value="">NE</option>
+                                        </select>
+                                        <span class="fo-icon">
+                                            <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M12.6475 14.1465L15.9404 10.8536C16.2554 10.5386 16.0323 10.0001 15.5869 10.0001L9.0011 10.0001C8.55565 10.0001 8.33257 10.5386 8.64755 10.8536L11.9404 14.1465C12.1357 14.3418 12.4523 14.3418 12.6475 14.1465Z" fill="#101010"/>
+                                            </svg>                                                
+                                        </span>
+                                    </span>
+                                </span>
+
+                                <label for="Swedbank_Eesti" class="fo-payment__method fo-payment__method--card" tabindex="0">
+                                    <span class="fo-payment__body-text">Swedbank Eesti</span>
+                                    <span class="fo-payment__radio">&nbsp;</span>
+                                </label>
+    
+                                <label for="SEB_Eesti" class="fo-payment__method fo-payment__method--bank" tabindex="0">
+                                    <span class="fo-payment__body-text">SEB Eesti</span>
+                                    <span class="fo-payment__radio">&nbsp;</span>
+                                </label>
+
+                                <label for="LHV" class="fo-payment__method fo-payment__method--card" tabindex="0">
+                                    <span class="fo-payment__body-text">LHV</span>
+                                    <span class="fo-payment__radio">&nbsp;</span>
+                                </label>
+    
+                                <label for="Luminor_Eesti" class="fo-payment__method fo-payment__method--bank" tabindex="0">
+                                    <span class="fo-payment__body-text">Luminor Eesti</span>
+                                    <span class="fo-payment__radio">&nbsp;</span>
+                                </label>
+
+                                <label for="Coop_Bank" class="fo-payment__method fo-payment__method--card" tabindex="0">
+                                    <span class="fo-payment__body-text">Coop Bank</span>
+                                    <span class="fo-payment__radio">&nbsp;</span>
+                                </label>
+    
+                                <label for="Citadele_Eesti" class="fo-payment__method fo-payment__method--bank" tabindex="0">
+                                    <span class="fo-payment__body-text">Citadele Eesti</span>
+                                    <span class="fo-payment__radio">&nbsp;</span>
+                                </label>
+    
+                                <label for="Revolut" class="fo-payment__method fo-payment__method--bank" tabindex="0">
+                                    <span class="fo-payment__body-text">Revolut</span>
+                                    <span class="fo-payment__radio">&nbsp;</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <button class="fo-payment__misc"><span class="fo-payment__btn-text">Cancel Payment</span></button>
+
+                        <div class="fo-payment__info">
+                            <span class="fo-payment__btn-text accent-orange">Vapiano Solaris</span>
+
+                            <span class="fo-payment__gov">
+                                <span class="fo-payment__body-text" style="margin-bottom: 4px;">Piano Solaris OÜ</span>
+                                <p class="fo-payment__body-text fo-payment__body-text--sm fo-payment__body-text--clr-gray">
+                                    Registration No.: 11661785<br>
+                                    VAT Code: EE101302254 <br>
+                                    Estonia pst. 9, 10143 Tallinn <br><br>
+                                    info@vapiano.ee | www.vapiano.ee
+                                </p>
+                            </span>
+
+                            <span class="fo-payment__epayments">
+                                <svg width="80" height="28" viewBox="0 0 80 28" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                    <rect x="0.393066" width="79.2137" height="28" fill="url(#pattern0)"/>
+                                    <defs>
+                                    <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+                                    <use xlink:href="#image0_304_5531" transform="scale(0.00302115 0.00854701)"/>
+                                    </pattern>
+                                    <image id="image0_304_5531" width="331" height="117" xlink:href="data:image/png;base64,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"/>
+                                    </defs>
+                                </svg>                                    
+                            </span>
+
+                            <span class="fo-payment__body-text accent-orange">Terms & Conditions | Privacy</span>
+                            <span class="fo-payment__body-text fo-payment__body-text--sm">&copy; Vapiano Solaris | Piano Solaris OÜ</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="fo-payment__submit">
+                    <div class="fo-payment__submit-wrapper">
+                        <div class="fo-payment__terms-wrapper">
+                            <span class="fo-payment__radio">&nbsp;</span>
+                            <span>
+                                <span class="fo-payment__body-text">I agree with the</span>
+                                <span class="fo-payment__body-text accent-orange">Terms & Conditions | Privacy</span>
+                            </span>
+                        </div>
+    
+                        <input type="submit" value="Pay" class="fo-payment__submit-btn">
+                    </div>
+                </div>
+            </form>
+        </main>
+    </div>
+</body>
+</html>

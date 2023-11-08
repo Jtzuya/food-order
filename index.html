@@ -42,6 +42,19 @@
 
     <input type="checkbox" name="header_menu" id="header_menu" hidden>
 
+    <input type="checkbox" name="product_modal" id="product_modal" hidden>
+
+    <input type="checkbox" name="product_option" id="product_option_1" hidden checked>
+    <input type="checkbox" name="product_option" id="product_option_2" hidden>
+    <input type="checkbox" name="product_option" id="product_option_3" hidden>
+    <input type="checkbox" name="product_option" id="product_option_4" hidden>
+    <input type="checkbox" name="product_option" id="product_option_5" hidden>
+
+    <input type="checkbox" name="order_type" id="order_type" hidden>
+    <input type="radio" name="order_type_interaction" id="order_type_interaction_1" checked hidden>
+    <input type="radio" name="order_type_interaction" id="order_type_interaction_2" hidden>
+    <input type="radio" name="order_type_interaction" id="order_type_interaction_3" hidden>     
+
     <!-- 
         masonry layout: 
         https://codepen.io/iamsaief/pen/jObaoKo 
@@ -59,15 +72,6 @@
                     <div class="fo-links__desk">
                         <a href="#" class="fo-link">Apolo Club</a>
                         <a href="#" class="fo-btn fo-btn--primary">Sign in</a>
-                        
-                        <a href="#" class="fo-link">
-                            <span class="fo-icon">
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9.99619 3.93775C10.1575 4.08011 10.2498 4.28488 10.2498 4.5V19.5C10.2498 19.9142 9.91405 20.25 9.49984 20.25C9.08562 20.25 8.74984 19.9142 8.74984 19.5V13.5833H6.1665C5.75229 13.5833 5.4165 13.2476 5.4165 12.8333V7.83334C5.4165 6.0192 6.48059 4.97324 7.46547 4.41924C7.95146 4.14587 8.43016 3.98231 8.78294 3.88676C8.9608 3.83859 9.11053 3.80667 9.21839 3.78645C9.27242 3.77632 9.31623 3.76907 9.34813 3.76415C9.36409 3.76169 9.37709 3.75981 9.38694 3.75844L9.39931 3.75676L9.40368 3.75619L9.4054 3.75597C9.40574 3.75593 9.40681 3.7558 9.49984 4.5L9.40681 3.7558C9.62027 3.72911 9.83492 3.79538 9.99619 3.93775ZM8.74984 5.47208C8.57387 5.53862 8.38633 5.62228 8.20087 5.7266C7.51908 6.11011 6.9165 6.7308 6.9165 7.83334V12.0833H8.74984V5.47208ZM12.8332 3.75C13.2474 3.75 13.5832 4.08579 13.5832 4.5V9.09862L14.5832 9.76528V4.5C14.5832 4.08579 14.919 3.75 15.3332 3.75C15.7474 3.75 16.0832 4.08579 16.0832 4.5V9.76528L17.0832 9.09862V4.5C17.0832 4.08579 17.419 3.75 17.8332 3.75C18.2474 3.75 18.5832 4.08579 18.5832 4.5V9.5C18.5832 9.75077 18.4578 9.98494 18.2492 10.124L16.0832 11.5681V19.5C16.0832 19.9142 15.7474 20.25 15.3332 20.25C14.919 20.25 14.5832 19.9142 14.5832 19.5V11.5681L12.4171 10.124C12.2085 9.98494 12.0832 9.75077 12.0832 9.5V4.5C12.0832 4.08579 12.419 3.75 12.8332 3.75Z" fill="currentColor"/>
-                                </svg>
-                            </span>
-                            <span>Dine in</span>
-                        </a>
     
                         <a href="javascript:void(0);" role="button" class="fo-link" tabindex="0" title="Localize" aria-label="Localize">
                             <span class="fo-icon">
@@ -80,15 +84,16 @@
                                 <option value="CN">CN</option>
                             </select>
                         </a>
-    
-                        <label for="system_appearance" class="fo-icon" title="temporary">
-                            <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M18.2087 14.4366C16.971 15.1607 15.5304 15.5757 13.9929 15.5757C9.37513 15.5757 5.63171 11.8323 5.63171 7.21452C5.63171 6.12323 5.84077 5.08076 6.22104 4.125C3.74132 5.57564 2.07568 8.26687 2.07568 11.3471C2.07568 15.9649 5.81911 19.7083 10.4369 19.7083C13.9633 19.7083 16.9799 17.5252 18.2087 14.4366Z" stroke="#D6D6D6" stroke-width="1.83333" stroke-linejoin="round"/>
-                                <path d="M13.573 4.32424C13.6217 4.14335 13.8783 4.14335 13.927 4.32424L14.282 5.64268C14.4944 6.43134 15.1104 7.04739 15.8991 7.25973L17.2175 7.61472C17.3984 7.66342 17.3984 7.92007 17.2175 7.96878L15.8991 8.32376C15.1104 8.53611 14.4944 9.15215 14.282 9.94082L13.927 11.2593C13.8783 11.4401 13.6217 11.4401 13.573 11.2593L13.218 9.94081C13.0056 9.15215 12.3896 8.53611 11.6009 8.32376L10.2825 7.96878C10.1016 7.92007 10.1016 7.66342 10.2825 7.61472L11.6009 7.25973C12.3896 7.04739 13.0056 6.43134 13.218 5.64268L13.573 4.32424Z" fill="#D6D6D6"/>
-                                <path d="M17.698 2.03249C17.7467 1.8516 18.0033 1.8516 18.052 2.03249L18.3212 3.03203C18.4061 3.34749 18.6525 3.59391 18.968 3.67885L19.9675 3.94797C20.1484 3.99668 20.1484 4.25332 19.9675 4.30203L18.968 4.57115C18.6525 4.65609 18.4061 4.90251 18.3212 5.21797L18.052 6.21751C18.0033 6.3984 17.7467 6.3984 17.698 6.21751L17.4288 5.21797C17.3439 4.90251 17.0975 4.65609 16.782 4.57115L15.7825 4.30203C15.6016 4.25332 15.6016 3.99668 15.7825 3.94797L16.782 3.67885C17.0975 3.59391 17.3439 3.34749 17.4288 3.03203L17.698 2.03249Z" fill="#D6D6D6"/>
-                            </svg>            
-                        </label>
                     </div>
+
+                    <label for="order_type" class="fo-link" tabindex="0">
+                        <span class="fo-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M9.99619 3.93775C10.1575 4.08011 10.2498 4.28488 10.2498 4.5V19.5C10.2498 19.9142 9.91405 20.25 9.49984 20.25C9.08562 20.25 8.74984 19.9142 8.74984 19.5V13.5833H6.1665C5.75229 13.5833 5.4165 13.2476 5.4165 12.8333V7.83334C5.4165 6.0192 6.48059 4.97324 7.46547 4.41924C7.95146 4.14587 8.43016 3.98231 8.78294 3.88676C8.9608 3.83859 9.11053 3.80667 9.21839 3.78645C9.27242 3.77632 9.31623 3.76907 9.34813 3.76415C9.36409 3.76169 9.37709 3.75981 9.38694 3.75844L9.39931 3.75676L9.40368 3.75619L9.4054 3.75597C9.40574 3.75593 9.40681 3.7558 9.49984 4.5L9.40681 3.7558C9.62027 3.72911 9.83492 3.79538 9.99619 3.93775ZM8.74984 5.47208C8.57387 5.53862 8.38633 5.62228 8.20087 5.7266C7.51908 6.11011 6.9165 6.7308 6.9165 7.83334V12.0833H8.74984V5.47208ZM12.8332 3.75C13.2474 3.75 13.5832 4.08579 13.5832 4.5V9.09862L14.5832 9.76528V4.5C14.5832 4.08579 14.919 3.75 15.3332 3.75C15.7474 3.75 16.0832 4.08579 16.0832 4.5V9.76528L17.0832 9.09862V4.5C17.0832 4.08579 17.419 3.75 17.8332 3.75C18.2474 3.75 18.5832 4.08579 18.5832 4.5V9.5C18.5832 9.75077 18.4578 9.98494 18.2492 10.124L16.0832 11.5681V19.5C16.0832 19.9142 15.7474 20.25 15.3332 20.25C14.919 20.25 14.5832 19.9142 14.5832 19.5V11.5681L12.4171 10.124C12.2085 9.98494 12.0832 9.75077 12.0832 9.5V4.5C12.0832 4.08579 12.419 3.75 12.8332 3.75Z" fill="currentColor"/>
+                            </svg>
+                        </span>
+                        <span>Dine in</span>
+                    </label>
     
                     <label for="header_menu" class="fo-link" tabindex="0">
                         <span class="fo-icon">
@@ -171,7 +176,7 @@
                         <span class="fo-icon">
                             <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path fill-rule="evenodd" clip-rule="evenodd" d="M7.19698 15.303C6.9529 15.0589 6.9529 14.6632 7.19698 14.4191L11.6161 9.99991L7.19697 5.58074C6.9529 5.33666 6.9529 4.94093 7.19697 4.69685C7.44105 4.45277 7.83678 4.45277 8.08086 4.69685L12.942 9.55796C13.186 9.80204 13.186 10.1978 12.942 10.4418L8.08086 15.303C7.83678 15.547 7.44105 15.547 7.19698 15.303Z" fill="currentColor"/>
-                            </svg>                                    
+                            </svg>                                
                         </span>
                     </button>
                     <!-- slider controls end -->
@@ -203,11 +208,13 @@
 
                                     <div class="fo-menu__card-img">
                                         <img src="./assets/images/menu-image-1.png" alt="Tähtsate ninade pizza">
-                                        <span class="fo-menu__card-add">
-                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M12.75 6.16699C12.75 5.75278 12.4142 5.41699 12 5.41699C11.5858 5.41699 11.25 5.75278 11.25 6.16699V11.2502H6.16663C5.75241 11.2502 5.41663 11.586 5.41663 12.0002C5.41663 12.4145 5.75241 12.7502 6.16663 12.7502H11.25V17.8337C11.25 18.2479 11.5858 18.5837 12 18.5837C12.4142 18.5837 12.75 18.2479 12.75 17.8337V12.7502H17.8333C18.2475 12.7502 18.5833 12.4145 18.5833 12.0002C18.5833 11.586 18.2475 11.2502 17.8333 11.2502H12.75V6.16699Z" fill="currentColor"/>
-                                            </svg>                                                    
-                                        </span>
+                                        <div class="fo-menu__card-qty">
+                                            <label for="product_modal" class="fo-menu__card-add">
+                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M12.75 6.16699C12.75 5.75278 12.4142 5.41699 12 5.41699C11.5858 5.41699 11.25 5.75278 11.25 6.16699V11.2502H6.16663C5.75241 11.2502 5.41663 11.586 5.41663 12.0002C5.41663 12.4145 5.75241 12.7502 6.16663 12.7502H11.25V17.8337C11.25 18.2479 11.5858 18.5837 12 18.5837C12.4142 18.5837 12.75 18.2479 12.75 17.8337V12.7502H17.8333C18.2475 12.7502 18.5833 12.4145 18.5833 12.0002C18.5833 11.586 18.2475 11.2502 17.8333 11.2502H12.75V6.16699Z" fill="currentColor"/>
+                                                </svg>                                                    
+                                            </label>
+                                        </div>
                                     </div>
                                 </div>
 
@@ -225,11 +232,19 @@
 
                                     <div class="fo-menu__card-img">
                                         <img src="./assets/images/menu-image-1.png" alt="Tähtsate ninade pizza">
-                                        <span class="fo-menu__card-add">
-                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M12.75 6.16699C12.75 5.75278 12.4142 5.41699 12 5.41699C11.5858 5.41699 11.25 5.75278 11.25 6.16699V11.2502H6.16663C5.75241 11.2502 5.41663 11.586 5.41663 12.0002C5.41663 12.4145 5.75241 12.7502 6.16663 12.7502H11.25V17.8337C11.25 18.2479 11.5858 18.5837 12 18.5837C12.4142 18.5837 12.75 18.2479 12.75 17.8337V12.7502H17.8333C18.2475 12.7502 18.5833 12.4145 18.5833 12.0002C18.5833 11.586 18.2475 11.2502 17.8333 11.2502H12.75V6.16699Z" fill="currentColor"/>
-                                            </svg>                                                    
-                                        </span>
+                                        <div class="fo-menu__card-qty fo-menu__card-qty--active">
+                                            <span class="fo-menu__card-remove">
+                                                <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M18.75 7.23694H15.75V6.73694C15.75 6.20651 15.5393 5.6978 15.1642 5.32272C14.7891 4.94765 14.2804 4.73694 13.75 4.73694H10C9.46957 4.73694 8.96086 4.94765 8.58579 5.32272C8.21071 5.6978 8 6.20651 8 6.73694V7.23694H5C4.80109 7.23694 4.61032 7.31596 4.46967 7.45661C4.32902 7.59726 4.25 7.78803 4.25 7.98694C4.25 8.18585 4.32902 8.37662 4.46967 8.51727C4.61032 8.65792 4.80109 8.73694 5 8.73694H5.36L7 20.3769C7.02208 20.5572 7.1097 20.7231 7.24615 20.8429C7.38261 20.9628 7.55838 21.0283 7.74 21.0269H16C16.1816 21.0283 16.3574 20.9628 16.4938 20.8429C16.6303 20.7231 16.7179 20.5572 16.74 20.3769L18.39 8.73694H18.75C18.9489 8.73694 19.1397 8.65792 19.2803 8.51727C19.421 8.37662 19.5 8.18585 19.5 7.98694C19.5 7.78803 19.421 7.59726 19.2803 7.45661C19.1397 7.31596 18.9489 7.23694 18.75 7.23694ZM9.5 6.73694C9.50256 6.60513 9.55606 6.47944 9.64928 6.38622C9.7425 6.293 9.86819 6.2395 10 6.23694H13.75C13.8818 6.2395 14.0075 6.293 14.1007 6.38622C14.1939 6.47944 14.2474 6.60513 14.25 6.73694V7.23694H9.5V6.73694ZM15.39 19.4869H8.39L6.87 8.73694H16.87L15.39 19.4869Z" fill="currentColor"/>
+                                                </svg>                                                    
+                                            </span>
+                                            <input type="number" name="qty" id="qty" class="fo-menu__card-qty-field" value="1" min="1" max="99">
+                                            <label for="product_modal" class="fo-menu__card-add">
+                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M12.75 6.16699C12.75 5.75278 12.4142 5.41699 12 5.41699C11.5858 5.41699 11.25 5.75278 11.25 6.16699V11.2502H6.16663C5.75241 11.2502 5.41663 11.586 5.41663 12.0002C5.41663 12.4145 5.75241 12.7502 6.16663 12.7502H11.25V17.8337C11.25 18.2479 11.5858 18.5837 12 18.5837C12.4142 18.5837 12.75 18.2479 12.75 17.8337V12.7502H17.8333C18.2475 12.7502 18.5833 12.4145 18.5833 12.0002C18.5833 11.586 18.2475 11.2502 17.8333 11.2502H12.75V6.16699Z" fill="currentColor"/>
+                                                </svg>                                                    
+                                            </label>
+                                        </div>
                                     </div>
                                 </div>
 
@@ -247,11 +262,9 @@
 
                                     <div class="fo-menu__card-img">
                                         <img src="./assets/images/menu-image-1.png" alt="Tähtsate ninade pizza">
-                                        <span class="fo-menu__card-add">
-                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M12.75 6.16699C12.75 5.75278 12.4142 5.41699 12 5.41699C11.5858 5.41699 11.25 5.75278 11.25 6.16699V11.2502H6.16663C5.75241 11.2502 5.41663 11.586 5.41663 12.0002C5.41663 12.4145 5.75241 12.7502 6.16663 12.7502H11.25V17.8337C11.25 18.2479 11.5858 18.5837 12 18.5837C12.4142 18.5837 12.75 18.2479 12.75 17.8337V12.7502H17.8333C18.2475 12.7502 18.5833 12.4145 18.5833 12.0002C18.5833 11.586 18.2475 11.2502 17.8333 11.2502H12.75V6.16699Z" fill="currentColor"/>
-                                            </svg>                                                    
-                                        </span>
+                                        <div class="fo-menu__card-qty">
+                                            <input type="number" name="qty" id="qty" class="fo-menu__card-qty-field" value="1" min="1" max="99">
+                                        </div>
                                     </div>
                                 </div>
 
@@ -269,11 +282,13 @@
 
                                     <div class="fo-menu__card-img">
                                         <img src="./assets/images/menu-image-1.png" alt="Tähtsate ninade pizza">
-                                        <span class="fo-menu__card-add">
-                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M12.75 6.16699C12.75 5.75278 12.4142 5.41699 12 5.41699C11.5858 5.41699 11.25 5.75278 11.25 6.16699V11.2502H6.16663C5.75241 11.2502 5.41663 11.586 5.41663 12.0002C5.41663 12.4145 5.75241 12.7502 6.16663 12.7502H11.25V17.8337C11.25 18.2479 11.5858 18.5837 12 18.5837C12.4142 18.5837 12.75 18.2479 12.75 17.8337V12.7502H17.8333C18.2475 12.7502 18.5833 12.4145 18.5833 12.0002C18.5833 11.586 18.2475 11.2502 17.8333 11.2502H12.75V6.16699Z" fill="currentColor"/>
-                                            </svg>                                                    
-                                        </span>
+                                        <div class="fo-menu__card-qty">
+                                            <label for="product_modal" class="fo-menu__card-add">
+                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M12.75 6.16699C12.75 5.75278 12.4142 5.41699 12 5.41699C11.5858 5.41699 11.25 5.75278 11.25 6.16699V11.2502H6.16663C5.75241 11.2502 5.41663 11.586 5.41663 12.0002C5.41663 12.4145 5.75241 12.7502 6.16663 12.7502H11.25V17.8337C11.25 18.2479 11.5858 18.5837 12 18.5837C12.4142 18.5837 12.75 18.2479 12.75 17.8337V12.7502H17.8333C18.2475 12.7502 18.5833 12.4145 18.5833 12.0002C18.5833 11.586 18.2475 11.2502 17.8333 11.2502H12.75V6.16699Z" fill="currentColor"/>
+                                                </svg>                                                    
+                                            </label>
+                                        </div>
                                     </div>
                                 </div>
 
@@ -339,6 +354,10 @@
         </main>
     </div><!-- fo-body end -->
 
+
+    <!--
+        sliders, popups/modals
+    -->
     <div class="fo-menu__fixed">
         <div class="fo-menu__wrapper">
             <span class="fo-icon">
@@ -392,6 +411,192 @@
                 <path d="M17.698 2.03249C17.7467 1.8516 18.0033 1.8516 18.052 2.03249L18.3212 3.03203C18.4061 3.34749 18.6525 3.59391 18.968 3.67885L19.9675 3.94797C20.1484 3.99668 20.1484 4.25332 19.9675 4.30203L18.968 4.57115C18.6525 4.65609 18.4061 4.90251 18.3212 5.21797L18.052 6.21751C18.0033 6.3984 17.7467 6.3984 17.698 6.21751L17.4288 5.21797C17.3439 4.90251 17.0975 4.65609 16.782 4.57115L15.7825 4.30203C15.6016 4.25332 15.6016 3.99668 15.7825 3.94797L16.782 3.67885C17.0975 3.59391 17.3439 3.34749 17.4288 3.03203L17.698 2.03249Z" fill="#D6D6D6"/>
             </svg>            
         </label>
+    </div>
+
+    <!-- product popup -->
+    <div class="fo-modal">
+        <label for="product_modal" class="fo-modal__backdrop">&nbsp;</label>
+        <div class="fo-product">
+            <label for="product_modal" class="fo-modal__close-btn">
+                <span class="fo-icon">
+                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M23.4525 10.119C23.8864 9.68504 23.8864 8.98152 23.4525 8.5476C23.0186 8.11369 22.315 8.11369 21.8811 8.5476L16.0001 14.4286L10.1191 8.5476C9.68522 8.11369 8.9817 8.11369 8.54779 8.5476C8.11387 8.98152 8.11387 9.68504 8.54779 10.119L14.4288 15.9999L8.54779 21.8809C8.11387 22.3149 8.11387 23.0184 8.54779 23.4523C8.9817 23.8862 9.68522 23.8862 10.1191 23.4523L16.0001 17.5713L21.8811 23.4523C22.315 23.8862 23.0186 23.8862 23.4525 23.4523C23.8864 23.0184 23.8864 22.3149 23.4525 21.8809L17.5715 15.9999L23.4525 10.119Z" fill="currentColor"/>
+                    </svg>                        
+                </span>
+            </label>
+
+            <div class="fo-product__img-wrapper">
+                <img class="fo-product__img" src="./assets/images/product-image.png" alt="">
+            </div>
+            
+            <div class="fo-product__info">
+                <p class="fo-product__title">Tähtsate ninade pizza</p>
+                <p class="fo-product__description">With pepperoni, mozzarella cheese and Vapiano tomato sauce. Garnish with cherry tomatoes and basil.</p>
+                <div class="fo-product__price">8,5&euro;</div>
+    
+                <div class="fo-product__option">
+                    <p class="fo-product__option-heading">Choose pizza extras</p>
+                    <div class="fo-product__option-lists">
+                        <label for="product_option_1" class="fo-product__option-list">
+                            <span class="fo-icon fo-icon--check">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M15.9974 5.39155C16.2415 5.63563 16.2415 6.03136 15.9974 6.27544L8.3585 13.9143C8.11442 14.1584 7.71869 14.1584 7.47462 13.9143L4.00239 10.4421C3.75832 10.198 3.75832 9.8023 4.00239 9.55822C4.24647 9.31414 4.6422 9.31414 4.88628 9.55822L7.91656 12.5885L15.1135 5.39155C15.3576 5.14748 15.7533 5.14748 15.9974 5.39155Z" fill="white"/>
+                                </svg>                                    
+                            </span>
+                            <span class="fo-icon fo-product__option-img">
+                                <img src="./assets/images/product-option.png" alt="">                           
+                            </span>
+                            <p class="fo-product__option-title">Especially cheesy pizza with mozzarella 40gr</p>
+                            <span class="fo-product__option-price">&#43; 1,50&euro;</span>
+                        </label>
+                        <label for="product_option_2" class="fo-product__option-list">
+                            <span class="fo-icon fo-icon--check">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M15.9974 5.39155C16.2415 5.63563 16.2415 6.03136 15.9974 6.27544L8.3585 13.9143C8.11442 14.1584 7.71869 14.1584 7.47462 13.9143L4.00239 10.4421C3.75832 10.198 3.75832 9.8023 4.00239 9.55822C4.24647 9.31414 4.6422 9.31414 4.88628 9.55822L7.91656 12.5885L15.1135 5.39155C15.3576 5.14748 15.7533 5.14748 15.9974 5.39155Z" fill="white"/>
+                                </svg>                                    
+                            </span>
+                            <span class="fo-icon fo-product__option-img">
+                                <img src="./assets/images/product-option.png" alt="">                           
+                            </span>
+                            <p class="fo-product__option-title">Gorgonzola 40gr</p>
+                            <span class="fo-product__option-price">&#43; 1,50&euro;</span>
+                        </label>
+                        <label for="product_option_3" class="fo-product__option-list">
+                            <span class="fo-icon fo-icon--check">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M15.9974 5.39155C16.2415 5.63563 16.2415 6.03136 15.9974 6.27544L8.3585 13.9143C8.11442 14.1584 7.71869 14.1584 7.47462 13.9143L4.00239 10.4421C3.75832 10.198 3.75832 9.8023 4.00239 9.55822C4.24647 9.31414 4.6422 9.31414 4.88628 9.55822L7.91656 12.5885L15.1135 5.39155C15.3576 5.14748 15.7533 5.14748 15.9974 5.39155Z" fill="white"/>
+                                </svg>                                    
+                            </span>
+                            <span class="fo-icon fo-product__option-img">
+                                <img src="./assets/images/product-option.png" alt="">                           
+                            </span>
+                            <p class="fo-product__option-title">Smoked cheese 20gr</p>
+                            <span class="fo-product__option-price">&#43; 1,50&euro;</span>
+                        </label>
+                        <label for="product_option_4" class="fo-product__option-list">
+                            <span class="fo-icon fo-icon--check">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M15.9974 5.39155C16.2415 5.63563 16.2415 6.03136 15.9974 6.27544L8.3585 13.9143C8.11442 14.1584 7.71869 14.1584 7.47462 13.9143L4.00239 10.4421C3.75832 10.198 3.75832 9.8023 4.00239 9.55822C4.24647 9.31414 4.6422 9.31414 4.88628 9.55822L7.91656 12.5885L15.1135 5.39155C15.3576 5.14748 15.7533 5.14748 15.9974 5.39155Z" fill="white"/>
+                                </svg>                                    
+                            </span>
+                            <span class="fo-icon fo-product__option-img">
+                                <img src="./assets/images/product-option.png" alt="">                           
+                            </span>
+                            <p class="fo-product__option-title">Pineapple</p>
+                            <span class="fo-product__option-price">&#43; 1,50&euro;</span>
+                        </label>
+                        <label for="product_option_5" class="fo-product__option-list">
+                            <span class="fo-icon fo-icon--check">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M15.9974 5.39155C16.2415 5.63563 16.2415 6.03136 15.9974 6.27544L8.3585 13.9143C8.11442 14.1584 7.71869 14.1584 7.47462 13.9143L4.00239 10.4421C3.75832 10.198 3.75832 9.8023 4.00239 9.55822C4.24647 9.31414 4.6422 9.31414 4.88628 9.55822L7.91656 12.5885L15.1135 5.39155C15.3576 5.14748 15.7533 5.14748 15.9974 5.39155Z" fill="white"/>
+                                </svg>                                    
+                            </span>
+                            <span class="fo-icon fo-product__option-img">
+                                <img src="./assets/images/product-option.png" alt="">                           
+                            </span>
+                            <p class="fo-product__option-title">Olives</p>
+                            <span class="fo-product__option-price">&#43; 1,50&euro;</span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="fo-product__cta">
+                    <div class="fo-product__qty">
+                        <button class="fo-product__qty-btn fo-product__qty-btn--decrement">
+                            <span class="fo-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M5.41675 11.5C5.41675 11.0858 5.75253 10.75 6.16675 10.75H17.8334C18.2476 10.75 18.5834 11.0858 18.5834 11.5C18.5834 11.9142 18.2476 12.25 17.8334 12.25H6.16675C5.75253 12.25 5.41675 11.9142 5.41675 11.5Z" fill="#989898"/>
+                                </svg>                                    
+                            </span>
+                        </button>
+                        <input type="number" name="qty" id="qty" class="fo-product__qty-field" value="1" min="1" max="99">
+                        <button class="fo-product__qty-btn fo-product__qty-btn--increment">
+                            <span class="fo-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M12.75 6.16699C12.75 5.75278 12.4142 5.41699 12 5.41699C11.5858 5.41699 11.25 5.75278 11.25 6.16699V11.2502H6.16666C5.75244 11.2502 5.41666 11.586 5.41666 12.0002C5.41666 12.4145 5.75244 12.7502 6.16666 12.7502H11.25V17.8337C11.25 18.2479 11.5858 18.5837 12 18.5837C12.4142 18.5837 12.75 18.2479 12.75 17.8337V12.7502H17.8333C18.2475 12.7502 18.5833 12.4145 18.5833 12.0002C18.5833 11.586 18.2475 11.2502 17.8333 11.2502H12.75V6.16699Z" fill="#444349"/>
+                                </svg>                                    
+                            </span>
+                        </button>
+                    </div>
+                    <button class="fo-product__atc">
+                        <span>Select ingredients</span>
+                        <span class="fo-product__atc-price">10,00 &euro;</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- product order type -->
+    <div class="fo-order">
+        <div class="fo-order__wrapper">
+            <label for="order_type" class="fo-order__close-btn">
+                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M23.4524 10.119C23.8864 9.68504 23.8864 8.98152 23.4524 8.5476C23.0185 8.11369 22.315 8.11369 21.8811 8.5476L16.0001 14.4286L10.1191 8.5476C9.68519 8.11369 8.98167 8.11369 8.54776 8.5476C8.11384 8.98152 8.11384 9.68504 8.54776 10.119L14.4287 15.9999L8.54776 21.8809C8.11384 22.3149 8.11384 23.0184 8.54776 23.4523C8.98167 23.8862 9.68519 23.8862 10.1191 23.4523L16.0001 17.5713L21.8811 23.4523C22.315 23.8862 23.0185 23.8862 23.4524 23.4523C23.8864 23.0184 23.8864 22.3149 23.4524 21.8809L17.5714 15.9999L23.4524 10.119Z" fill="#444349"/>
+                </svg>                    
+            </label>
+
+            <form class="fo-order__form">
+                <input type="radio" name="order_type" id="dine" hidden checked>
+                <input type="radio" name="order_type" id="takeaway"  hidden>
+
+                <div class="fo-order__switcher">
+                    <label for="dine" class="fo-order__switch fo-order__switch--dine" tabindex="-1">
+                        <span class="fo-order__switch-icon">
+                            <svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M23.3244 9.18807C23.7007 9.52027 23.9163 9.99806 23.9163 10.5V45.5C23.9163 46.4665 23.1328 47.25 22.1663 47.25C21.1998 47.25 20.4163 46.4665 20.4163 45.5V31.6945H14.3885C13.422 31.6945 12.6385 30.911 12.6385 29.9445V18.2778C12.6385 14.0448 15.1214 11.6042 17.4194 10.3116C18.5534 9.6737 19.6704 9.29205 20.4935 9.06911C20.9085 8.95671 21.2579 8.88224 21.5096 8.83505C21.6356 8.81141 21.7379 8.7945 21.8123 8.78302C21.8495 8.77728 21.8799 8.77289 21.9029 8.7697L21.9317 8.76578L21.9419 8.76445L21.9459 8.76394C21.9467 8.76384 21.9492 8.76352 22.1663 10.5L21.9492 8.76352C22.4473 8.70126 22.9481 8.85588 23.3244 9.18807ZM20.4163 12.7682C20.0057 12.9234 19.5681 13.1186 19.1354 13.3621C17.5445 14.2569 16.1385 15.7052 16.1385 18.2778V28.1945H20.4163V12.7682ZM29.9441 8.75001C30.9106 8.75001 31.6941 9.53351 31.6941 10.5V21.2301L34.0274 22.7857V10.5C34.0274 9.53351 34.8109 8.75001 35.7774 8.75001C36.7439 8.75001 37.5274 9.53351 37.5274 10.5V22.7857L39.8607 21.2301V10.5C39.8607 9.53351 40.6442 8.75001 41.6107 8.75001C42.5772 8.75001 43.3607 9.53351 43.3607 10.5V22.1667C43.3607 22.7518 43.0683 23.2982 42.5815 23.6228L37.5274 26.9921V45.5C37.5274 46.4665 36.7439 47.25 35.7774 47.25C34.8109 47.25 34.0274 46.4665 34.0274 45.5V26.9921L28.9733 23.6228C28.4865 23.2982 28.1941 22.7518 28.1941 22.1667V10.5C28.1941 9.53351 28.9776 8.75001 29.9441 8.75001Z" fill="currentColor"/>
+                            </svg>                            
+                        </span>
+                        <p class="fo-order__switch-text">Dine in</p>
+                    </label>
+
+                    <label for="takeaway" class="fo-order__switch fo-order__switch--takeaway" tabindex="-1">
+                        <span class="fo-order__switch-icon">
+                            <svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M45.9669 17.7333C45.7336 17.2667 45.2669 16.8 44.8002 16.5667L29.4002 7.93334C28.9336 7.70001 28.4669 7.46667 27.7669 7.46667C27.3002 7.46667 26.6002 7.70001 26.1336 7.93334L11.2002 16.5667C10.5002 16.8 10.2669 17.2667 9.80023 17.7333C9.56689 18.2 9.56689 18.9 9.56689 19.3667V36.6333C9.56689 37.1 9.80023 37.8 10.0336 38.2667C10.2669 38.7333 10.7336 39.2 11.2002 39.4333L26.6002 48.0667C27.0669 48.3 27.5336 48.5333 28.2336 48.5333C28.7002 48.5333 29.4002 48.3 29.8669 48.0667L45.2669 39.4333C45.7336 39.2 46.2002 38.7333 46.4336 38.2667C46.6669 37.8 46.9002 37.3333 46.9002 36.6333V19.3667C46.4336 18.9 46.4336 18.2 45.9669 17.7333ZM28.0002 10.9667L41.3002 18.4333L37.1002 20.7667L23.8002 13.3L28.0002 10.9667ZM28.2336 25.9L14.7002 18.4333L19.8336 15.4L33.1336 22.8667L28.2336 25.9ZM13.0669 21.4667L26.6002 28.9333L26.3669 43.8667L13.0669 36.4V21.4667ZM29.8669 43.8667L30.1002 28.9333L35.4669 25.9V31.7333C35.4669 32.6667 36.1669 33.6 37.3336 33.6C38.2669 33.6 39.2002 32.9 39.2002 31.7333V24.0333L43.4002 21.4667V36.4L29.8669 43.8667Z" fill="currentColor"/>
+                            </svg>                            
+                        </span>
+                        <p class="fo-order__switch-text">Takeaway</p>
+                    </label>
+                </div>
+        
+                <p class="fo-order__title fo_order_type_interaction_1">Takeaway:</p>
+                <p class="fo-order__title fo_order_type_interaction_3">Change dining option?</p>
+
+                <p class="fo-order__details fo_order_type_interaction_3">You are about to change dining option and you cart will be cleared. Is this OK?</p>
+        
+                <span class="fo-order__field fo_order_type_interaction_1">
+                    <input type="text" class="fo-order__field-input" placeholder="Date" value="Today">
+                    <span class="fo-icon">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M15.8333 2.66667H14V1.66667C14 1.33333 13.75 1 13.3333 1C12.9166 1 12.6666 1.33333 12.6666 1.66667V2.66667H7.3333V1.66667C7.3333 1.33333 7.0833 1 6.66663 1C6.24996 1 5.99996 1.33333 5.99996 1.66667V2.66667H4.16663C2.91663 2.66667 1.8333 3.75 1.8333 5V8.33333V16.6667C1.8333 17.9167 2.8333 19 4.16663 19H15.8333C17.0833 19 18.1666 18 18.1666 16.6667V8.33333V5C18.1666 3.75 17.0833 2.66667 15.8333 2.66667ZM16.8333 16.6667C16.8333 17.25 16.3333 17.6667 15.8333 17.6667H4.16663C3.5833 17.6667 3.16663 17.1667 3.16663 16.6667V9H16.9166V16.6667H16.8333ZM16.8333 7.66667H3.16663V5C3.16663 4.41667 3.66663 4 4.16663 4H5.99996V5C5.99996 5.33333 6.24996 5.66667 6.66663 5.66667C7.0833 5.66667 7.3333 5.33333 7.3333 5V4H12.75V5C12.75 5.33333 13 5.66667 13.4166 5.66667C13.8333 5.66667 14.0833 5.41667 14.0833 5V4H15.8333C16.4166 4 16.8333 4.5 16.8333 5V7.66667Z" fill="currentColor"/>
+                        </svg>                            
+                    </span>
+                </span>
+        
+                <span class="fo-order__field fo_order_type_interaction_1">
+                    <input type="time" name="time" id="time" class="fo-order__field-input" value="11:30">
+                    <span class="fo-icon">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M3.68054 9.99999C3.68054 6.50985 6.50985 3.68054 9.99999 3.68054C13.4901 3.68054 16.3194 6.50985 16.3194 9.99999C16.3194 13.4901 13.4901 16.3194 9.99999 16.3194C6.50985 16.3194 3.68054 13.4901 3.68054 9.99999ZM9.99999 2.43054C5.8195 2.43054 2.43054 5.8195 2.43054 9.99999C2.43054 14.1805 5.8195 17.5694 9.99999 17.5694C14.1805 17.5694 17.5694 14.1805 17.5694 9.99999C17.5694 5.8195 14.1805 2.43054 9.99999 2.43054ZM10.625 5.83335C10.625 5.48818 10.3452 5.20835 10 5.20835C9.65482 5.20835 9.375 5.48818 9.375 5.83335V10C9.375 10.2368 9.50875 10.4532 9.72049 10.559L12.4983 11.9479C12.807 12.1023 13.1824 11.9772 13.3368 11.6684C13.4912 11.3597 13.366 10.9843 13.0573 10.8299L10.625 9.61375V5.83335Z" fill="currentColor"/>
+                        </svg>                            
+                    </span>
+                </span>
+        
+                <span class="fo-order__message fo_order_type_interaction_1">Order will be ready at chosen time</span>
+                <span class="fo-order__message fo_order_type_interaction_2">We will start to prepare your order ASAP.</span>
+            </form>
+    
+            <label for="order_type_interaction_2" class="fo-order__submit fo-order__submit--outline fo_order_type_interaction_3">Cancel</label> 
+            <label for="order_type_interaction_3" class="fo-order__submit fo_order_type_interaction_3">Yes, continue</label>
+            <label for="order_type_interaction_2" class="fo-order__submit fo_order_type_interaction_1">Continue</label> <!-- outside -->
+            <label for="order_type_interaction_3" class="fo-order__submit fo_order_type_interaction_2">Continue</label> <!-- outside -->
+        </div>
+    </div>
+
+    <!-- beside cart on smaller devices -->
+    <div class="fo-menu__menus-opened">
+
     </div>
 </body>
 </html>

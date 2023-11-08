@@ -39,3 +39,69 @@
 #header_menu:checked ~ .fo-slider__menu {
     right: 0;
 }
+
+/* product options */
+#product_option_1:checked ~ .fo-modal [for="product_option_1"] .fo-icon.fo-icon--check,
+#product_option_2:checked ~ .fo-modal [for="product_option_2"] .fo-icon.fo-icon--check,
+#product_option_3:checked ~ .fo-modal [for="product_option_3"] .fo-icon.fo-icon--check,
+#product_option_4:checked ~ .fo-modal [for="product_option_4"] .fo-icon.fo-icon--check,
+#product_option_5:checked ~ .fo-modal [for="product_option_5"] .fo-icon.fo-icon--check {
+    display: flex;
+}
+
+/* modal */
+#product_modal:checked ~ .fo-modal,
+#order_type:checked ~ .fo-order { 
+    transform: scale(1);
+}
+
+/* disable body's scrolling */
+body:has(#product_modal:checked),
+body:has(#order_type:checked) { overflow: hidden; }
+
+@media (max-width: 767px) {
+    #product_modal:checked ~ .fo-modal {
+        top: 0;
+    }
+}
+
+/* modal order type */
+#dine:checked ~ .fo-order__switcher [for="dine"],
+#takeaway:checked ~ .fo-order__switcher [for="takeaway"] {
+    color: var(--clr-base-white);
+}
+
+#dine:checked ~ .fo-order__switcher .fo-order__switch:first-of-type:before {
+    left: 0;
+}
+
+#takeaway:checked ~ .fo-order__switcher .fo-order__switch:first-of-type:before {
+    left: 100%;
+}
+
+#order_type_interaction_1:checked ~ .fo-order .fo_order_type_interaction_2,
+#order_type_interaction_1:checked ~ .fo-order .fo_order_type_interaction_3,
+#order_type_interaction_2:checked ~ .fo-order .fo_order_type_interaction_1,
+#order_type_interaction_2:checked ~ .fo-order .fo_order_type_interaction_3,
+#order_type_interaction_3:checked ~ .fo-order .fo_order_type_interaction_1,
+#order_type_interaction_3:checked ~ .fo-order .fo_order_type_interaction_2,
+#order_type_interaction_3:checked ~ .fo-order .fo-order__switcher {
+    display: none!important;
+}
+
+/* payments page (payment method) */
+#payment_method_card:checked ~ [for="payment_method_card"] .fo-payment__radio::before,
+#payment_method_bank:checked ~ [for="payment_method_bank"] .fo-payment__radio::before,
+#Swedbank_Eesti:checked ~ [for="Swedbank_Eesti"] .fo-payment__radio::before,
+#SEB_Eesti:checked ~ [for="SEB_Eesti"] .fo-payment__radio::before,
+#Luminor_Eesti:checked ~ [for="Luminor_Eesti"] .fo-payment__radio::before,
+#LHV:checked ~ [for="LHV"] .fo-payment__radio::before,
+#Coop_Bank:checked ~ [for="Coop_Bank"] .fo-payment__radio::before,
+#Citadele_Eesti:checked ~ [for="Citadele_Eesti"] .fo-payment__radio::before,
+#Revolut:checked ~ [for="Revolut"] .fo-payment__radio::before,
+#payment_method_card:checked ~ .fo-payment__methods-for.fo-payment__methods-for--card,
+#payment_method_bank:checked ~ .fo-payment__methods-for.fo-payment__methods-for--bank,
+#payment_method_card:checked ~ .fo-payment__body-text--blocked .fo-payment__change,
+#payment_method_bank:checked ~ .fo-payment__body-text--blocked .fo-payment__change {
+    display: grid!important;
+}

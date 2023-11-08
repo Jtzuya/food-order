@@ -26,6 +26,102 @@
     .fo-slider__card:nth-of-type(8n) {
         height: 221px;
     }
+
+    .fo-menu__card-wrapper:hover {
+        background-color: var(--clr-accent-green);
+    }
+
+    .fo-modal {
+        place-items: start;
+    }
+
+    .fo-product {
+        height: 100%;
+        width: 100%;
+        grid-template-columns: 1fr;
+        padding: 0 0 92px;
+        border-radius: 0;
+        overflow-y: auto;
+    }
+
+    .fo-product__img-wrapper {
+        height: 400px;
+        min-height: 400px;
+        position: sticky;
+        top: 0;
+    }
+
+    .fo-menu__card-price {
+        flex: 1;
+        display: flex;
+        align-items: center;
+    }
+
+    .fo-menu__card-title,
+    .fo-product__option-title {
+        display: -webkit-box;
+        -webkit-line-clamp: 1;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .fo-menu__card-info {
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .fo-product__info {
+        overflow: unset;
+        padding: 32px 24px 0;
+        margin: -104px auto 0;
+        background-color: var(--clr-base-white);
+        border-top-right-radius: 32px;
+        border-top-left-radius: 32px;
+        width: calc(100% - 32px);
+    }
+
+    .fo-modal__close-btn {
+        top: 4px;
+        right: 16px;
+    }
+
+    .fo-product__title {
+        padding-top: 0;
+    }
+
+    .fo-modal__close-btn svg path {
+        fill: var(--clr-base-white);
+    }
+
+    .fo-product__cta {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        padding: 16px 16px 20px;
+        background-color: var(--clr-neutral-50);
+        border-top-left-radius: 32px;
+        border-top-right-radius: 32px;
+    }
+
+    .fo-product__option {
+        padding: 32px 0;
+    }
+
+    .fo-modal {
+        scale: 1;
+        top: 100%;
+        transition: top var(--duration) ease-in-out;
+        animation-delay: var(--duration);
+        animation: shrink var(--duration) forwards;
+    }
+
+    .fo-order__wrapper {
+        max-width: calc(100% - 32px);
+    }
 }
 
 @media (min-width: 768px) {

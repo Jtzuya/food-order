@@ -1,0 +1,14 @@
+{
+    "USA": {
+        "phoneCode": "+1",
+        "flag": "🇺🇸"
+    },
+    "Canada": {
+        "phoneCode": "+1",
+        "flag": "🇨🇦"
+    },
+    "United Kingdom": {
+        "phoneCode": "+44",
+        "flag": "🇬🇧"
+    }
+}
