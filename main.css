@@ -1100,7 +1100,7 @@ input[type="time"]::-webkit-datetime-edit-ampm-field {
 .fo-payment__header-wrapper {
     max-width: 624px;
     margin: 0 auto;
-    padding: 10px 0;
+    padding: 10px 16px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -1119,6 +1119,11 @@ input[type="time"]::-webkit-datetime-edit-ampm-field {
     background-color: var(--clr-accent-orange);
     display: grid;
     place-items: center;
+}
+
+.fo-payment__gov {
+    display: flex;
+    flex-direction: column;
 }
 
 .fo-payment__text {
