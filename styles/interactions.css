@@ -102,6 +102,28 @@ body:has(#order_type:checked) { overflow: hidden; }
 #payment_method_card:checked ~ .fo-payment__methods-for.fo-payment__methods-for--card,
 #payment_method_bank:checked ~ .fo-payment__methods-for.fo-payment__methods-for--bank,
 #payment_method_card:checked ~ .fo-payment__body-text--blocked .fo-payment__change,
-#payment_method_bank:checked ~ .fo-payment__body-text--blocked .fo-payment__change {
+#payment_method_bank:checked ~ .fo-payment__body-text--blocked .fo-payment__change,
+#terms:checked ~ [for="terms"] .fo-payment__radio::before {
     display: grid!important;
+}
+
+#order_details_show:checked ~ .fo-body .fo-payment__order-full-details {
+    display: block;
+}
+
+#order_details_show:checked ~ .fo-body .fo-payment__chevron-ico {
+    transform: rotate(180deg);
+}
+
+/* QR Code scanner */
+#qr_scanner:checked ~ .fo-qr {
+    scale: 1;
+}
+
+#payment_more_opt:checked ~ .fo-body .fo-payment__misc-ico:last-of-type {
+    transform: rotate(180deg);
+}
+
+#payment_more_opt:checked ~ .fo-body .fo-payment__selection-hidden {
+    display: grid;
 }
