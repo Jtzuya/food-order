@@ -1353,6 +1353,7 @@ input[type="time"]::-webkit-datetime-edit-ampm-field {
     border-top-left-radius: 32px;
     border-top-right-radius: 32px;
     background-color: var(--clr-neutral-50);
+    box-shadow: 0 -6px 8px 0px rgba(0 0 0 / 4%);
 }
 
 .fo-payment__submit-wrapper {

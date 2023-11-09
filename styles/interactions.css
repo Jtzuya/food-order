@@ -60,8 +60,10 @@ body:has(#product_modal:checked),
 body:has(#order_type:checked) { overflow: hidden; }
 
 @media (max-width: 767px) {
-    #product_modal:checked ~ .fo-modal {
+    #product_modal:checked ~ .fo-modal,
+    #qr_scanner:checked ~ .fo-qr {
         top: 0;
+        transition: top var(--duration) ease-in-out;
     }
 }
 

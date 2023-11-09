@@ -301,6 +301,23 @@
         </main>
     </div>
 
+    <style>
+        .fo-qr__scanner::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            min-width: 160px;
+            width: 160px;
+            min-height: 160px;
+            height: 160px;
+            background-color: papayawhip;
+            border: 2px solid white;
+            z-index: 100;
+        }
+    </style>
+
     <div class="fo-qr">
         <div class="fo-qr__wrapper">
             <label for="qr_scanner" class="fo-qr__close">

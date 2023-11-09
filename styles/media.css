@@ -135,6 +135,23 @@
         height: 240px;
         min-height: 240px;
     }
+
+    .fo-payment__main {
+        padding: 28px 0 0;
+    }
+
+    .fo-payment__form {
+        row-gap: 24px;
+    }
+    
+    .fo-payment__info {
+        padding: 0;
+    }
+    
+    .fo-qr {
+        top: 100%;
+        transition: top var(--duration) ease-in-out;
+    }
 }
 
 @media (min-width: 768px) {
