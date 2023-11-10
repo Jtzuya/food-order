@@ -220,13 +220,14 @@
     .fo-sidebar {
         position: fixed;
         left: 0;
-        top: 0;
+        top: 100%;
         max-width: 100%;
         height: 100%;
         z-index: 500;
         background-color: var(--clr-product-card);
         padding: 60px 16px 110px;
         overflow: auto;
+        transition: top var(--duration) ease-in-out;
     }
 
     .fo-sidebar::-webkit-scrollbar {
@@ -240,7 +241,7 @@
     .fo-form__redirect-wrapper {
         place-items: center;
         position: fixed;
-        bottom: 0;
+        bottom: -100%;
         left: 0;
         width: 100%;
         padding: 16px;
