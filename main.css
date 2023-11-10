@@ -647,8 +647,14 @@ form button,
     border-radius: 48px;
     border: none;
     font-size: 2rem;
-    color: #000000  ;
+    color: var(--clr-base-cta);
     cursor: pointer;
+    transition: all var(--duration) ease-in-out;
+}
+
+.fo-form__redirect:hover {
+    background-color: #000;
+    color: white;
 }
 
 /* MENU SLIDER */
