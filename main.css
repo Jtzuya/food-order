@@ -10,6 +10,18 @@ body {
     font-size: 1.6rem;
 }
 
+/* dark and light mode button */
+[for="system_appearance"] {
+    height: 50px;
+    width: 50px;
+    font-size: 1.8rem;
+    color: white;
+    padding: 12px 16px;
+    background-color: var(--clr-base-cta);
+    border-radius: 5rem; 
+    cursor: pointer;
+}
+
 .fo-body { 
     position: relative;
     background-color: transparent;
@@ -96,7 +108,7 @@ body {
     background-color: var(--clr-base-cta);
     border-radius: var(--rounded-pill-sm);
     font-size: 1.6rem;
-    padding: 5px 16px 7px;
+    padding: 7px 16px;
     line-height: 22px;
     letter-spacing: -2%;
     transition: color 150ms ease-in-out, background-color 150ms ease-in-out;
@@ -357,6 +369,21 @@ body {
     -ms-flex-direction: column;
     row-gap: 16px;
     padding: 16px 0;
+    max-width: 386px;
+    width: 100%;
+}
+
+.fo-overview__close-btn {
+    position: absolute;
+    top: 10px;
+    right: 16px;
+    color: var(--clr-text-secondary);
+    display: grid;
+    place-items: center;
+}
+
+.fo-form__redirect-wrapper {
+    display: grid;
 }
 
 .fo-overview-card {
@@ -536,7 +563,7 @@ body {
     display: grid;
     grid-template-columns: 1fr;
     row-gap: 16px;
-    padding: 16px 0 20px;
+    padding: 16px 0 0;
 }
 
 .fo-payment__methods-for {
@@ -559,6 +586,7 @@ body {
 fieldset {
     all: unset;
     display: flex;
+    align-items: center;
     gap: 8px;
     border: 1px solid #C2C2C2;
     border-radius: 48px;
@@ -592,6 +620,22 @@ fieldset input {
     background-color: transparent;
     font-size: 1.8rem;
     color: var(--clr-text-primary);
+}
+
+.fo-select__wrapper {
+    display: flex;
+    align-items: center;
+    column-gap: 4px;
+}
+
+.fo-select {
+    all: unset;
+}
+
+.fo-select__country-code {
+    color: var(--clr-text-primary);
+    font-size: 18px;
+    line-height: 22px;
 }
 
 form button,
@@ -729,6 +773,17 @@ form button,
     z-index: 1000;
 }
 
+.fo-product__info-card {
+    display: flex;
+    flex-direction: column;
+    row-gap: 24px;
+    padding: 32px 24px;
+    background-color: var(--clr-product-card);
+    border-radius: 32px;
+    box-shadow: 0 -8px 10px rgba(0 0 0 / 2.5%);
+    border: 1px solid var(--clr-product-card-border);
+}
+
 .fo-product__img-wrapper {
     display: grid;
     place-items: center;
@@ -750,6 +805,10 @@ form button,
     padding: 0 0 0 24px;
 }
 
+.fo-product__info::-webkit-scrollbar {
+    display: none;
+}
+
 .fo-modal__close-btn {
     display: flex;
     justify-content: flex-end;
@@ -763,7 +822,6 @@ form button,
     font-size: 3.6rem;
     color: var(--clr-text-primary);
     line-height: 38px;
-    margin-bottom: 24px;
     padding-top: 56px;
     transition-delay: var(--duration);
 }
@@ -772,7 +830,6 @@ form button,
     font-size: 1.8rem;
     color: var(--clr-text-secondary);
     line-height: 22px;
-    margin-bottom: 24px;
     transition-delay: var(--duration);
 }
 
@@ -781,14 +838,6 @@ form button,
     line-height: 24px;
     color: var(--clr-text-secondary);
     transition-delay: var(--duration);
-    margin-bottom: 32px;
-}
-
-.fo-product__option {
-    padding: 32px 24px;
-    box-shadow: 0 -8px 10px rgba(0 0 0 / 2.5%);
-    border-top-left-radius: 32px;
-    border-top-right-radius: 32px;
 }
 
 .fo-product__option-heading {
@@ -801,6 +850,7 @@ form button,
 
 .fo-product {
     position: relative;
+    background-color: var(--clr-product-card);
 }
 
 .fo-product__option-lists {
@@ -824,7 +874,8 @@ form button,
 
 .fo-icon.fo-icon--check {
     display: none;
-    background-color: var(--clr-base-cta);
+    background-color: var(--clr-bg-checkbox);
+    color: var(--clr-checkbox);
     width: max-content;
     border-radius: 100%;
     position: absolute;
@@ -833,6 +884,8 @@ form button,
 }
 
 .fo-product__info {
+    display: grid;
+    row-gap: 16px;
     position: relative;
     overflow-y: auto;
 }
@@ -868,7 +921,7 @@ form button,
     column-gap: 16px;
     row-gap: 16px;
     padding: 32px 0 0;
-    background-color: var(--clr-base-white);
+    background-color: var(--clr-product-card);
 }
 
 .fo-product__qty {
@@ -950,7 +1003,7 @@ form button,
 
 .fo-order__wrapper {
     max-width: 350px;
-    background-color: white;
+    background-color: var(--clr-order-type-card);
     margin: 0 auto;
     padding: 0 45px 32px;
     border-radius: 32px;
@@ -976,7 +1029,7 @@ form button,
     padding: 10px;
     border-radius: 140px;
     display: grid;
-    grid-template-columns: repeat(2, minmax(0,1fr));
+    grid-template-columns: repeat(2, 120px);
 }
 
 .fo-order__switch {
@@ -1080,9 +1133,9 @@ input[type="time"]::-webkit-datetime-edit-ampm-field {
 
 .fo-order__submit.fo-order__submit--outline {
     background-color: transparent;
-    border: 1px solid var(--clr-add-btn);
-    margin-bottom: 20px;
-    color: var(--clr-text-primary);
+    border: 1px solid var(--clr-border-border);
+    margin-bottom: 12px;
+    color: var(--clr-text-secondary);
 }
 
 /********
@@ -1578,14 +1631,14 @@ input[type="time"]::-webkit-datetime-edit-ampm-field {
     object-fit: cover;
 }
 
+.fo-payment__selection-hidden {
+    display: none;
+}
+
 @keyframes shrink {
     100% {
         user-select: none;
         -webkit-user-select: none;
         -moz-user-select: -moz-none;
     }
-}
-
-.fo-payment__selection-hidden {
-    display: none;
 }
