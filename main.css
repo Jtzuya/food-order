@@ -1021,6 +1021,7 @@ form button,
     top: 16px;
     right: 16px;
     cursor: pointer;
+    color: var(--clr-text-secondary);
 }
 
 .fo-order__form {
