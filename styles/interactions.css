@@ -57,6 +57,7 @@
 
 /* disable body's scrolling */
 body:has(#product_modal:checked),
+body:has(#mobile_menu:checked),
 body:has(#order_type:checked) { overflow: hidden; }
 
 @media (max-width: 767px) {
@@ -64,6 +65,19 @@ body:has(#order_type:checked) { overflow: hidden; }
     #qr_scanner:checked ~ .fo-qr {
         top: 0;
         transition: top var(--duration) ease-in-out;
+    }
+
+    /* menu */
+    #mobile_menu:checked ~ .fo-menu__fixed .fo-menu__btn.fo-menu__btn--open {
+        display: none!important;
+    }
+
+    #mobile_menu:checked ~ .fo-menu__fixed .fo-menu__btn.fo-menu__btn--close {
+        display: grid!important;
+    }
+    
+    #mobile_menu:checked ~ .fo-menu__menus-opened {
+        top: 0%;
     }
 }
 

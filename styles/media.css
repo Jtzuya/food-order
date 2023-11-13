@@ -35,6 +35,10 @@
         background-color: var(--clr-accent-green);
     }
 
+    .fo-slider__pill .fo-slider__text {
+        font-size: 2rem;
+    }
+
     .fo-modal {
         place-items: start;
     }
@@ -172,6 +176,14 @@
         padding: 0 24px;
     }
 
+    .fo-slider {
+        overflow-x: auto;
+        overscroll-behavior-x: contain;
+        scroll-snap-type: x mandatory;
+        -ms-overflow-style: none; /* for Internet Explorer, Edge */
+        scrollbar-width: none; /* for Firefox */
+    }
+
     .fo-form-wrapper {
         margin: 0 0 20px;
     }
@@ -200,6 +212,10 @@
 
     .fo-product__info-card:first-of-type  {
         border: none;
+    }
+
+    .fo-menu__menus-opened {
+        display: none;
     }
 }
 

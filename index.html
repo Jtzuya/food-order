@@ -42,6 +42,7 @@
     <input type="radio" name="order_type_interaction" id="order_type_interaction_3" hidden>     
 
     <input type="checkbox" name="overview_close" id="overview_close" hidden>
+    <input type="checkbox" name="mobile_menu" id="mobile_menu" hidden>
 
     <!-- 
         masonry layout: 
@@ -99,66 +100,75 @@
         <main class="fo-main">
             <!-- slider -->
             <div class="fo-section fo-max-width">
-                <div class="fo-slider">
-                    <h2 class="fo-slider__title">Menu</h2>
-                    <div class="fo-slider__wrapper">
-                        <!-- card search -->
-                        <label for="categories_slider_1" class="fo-slider__card fo-slider__card--menu fo-slider__card--bg-neutral">
-                            <span class="fo-icon fo-icon--tertiary">
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M5.75 10.5C5.75 7.87665 7.87665 5.75 10.5 5.75C13.1234 5.75 15.25 7.87665 15.25 10.5C15.25 13.1234 13.1234 15.25 10.5 15.25C7.87665 15.25 5.75 13.1234 5.75 10.5ZM10.5 4.25C7.04822 4.25 4.25 7.04822 4.25 10.5C4.25 13.9518 7.04822 16.75 10.5 16.75C11.9616 16.75 13.3059 16.2483 14.3703 15.4078C14.3985 15.4512 14.4316 15.4923 14.4697 15.5303L19.4697 20.5303C19.7626 20.8232 20.2374 20.8232 20.5303 20.5303C20.8232 20.2374 20.8232 19.7626 20.5303 19.4697L15.5303 14.4697C15.4923 14.4316 15.4512 14.3985 15.4078 14.3703C16.2483 13.3059 16.75 11.9616 16.75 10.5C16.75 7.04822 13.9518 4.25 10.5 4.25Z" fill="currentColor"/>
-                                </svg>                                    
-                            </span>
-                            <span class="fo-slider__text fo-slider__text--menu">MENU</span>
-                        </label><!-- card search end -->
-                        <label for="categories_slider_1" class="fo-slider__card fo-slider__card--bg-orange">
-                            <span class="fo-slider__img-wrapper">
-                                <img src="./assets/images/slider-card-img-1.png" alt="Appetizer" class="fo-slider__img">
-                            </span>
-                            <span class="fo-slider__text">Appetizer</span>
-                        </label><!-- card end -->
-                        <label for="categories_slider_2" class="fo-slider__card fo-slider__card--bg-blue">
-                            <span class="fo-slider__img-wrapper">
-                                <img src="./assets/images/slider-card-img-2.png" alt="Appetizer" class="fo-slider__img">
-                            </span>
-                            <span class="fo-slider__text">Salad Soup</span>
-                        </label><!-- card end -->
-                        <label for="categories_slider_3" class="fo-slider__card fo-slider__card--bg-purple">
-                            <span class="fo-slider__img-wrapper">
-                                <img src="./assets/images/slider-card-img-1.png" alt="Appetizer" class="fo-slider__img">
-                            </span>
-                            <span class="fo-slider__text">Risotto</span>
-                        </label><!-- card end -->
-                        <label for="categories_slider_4" class="fo-slider__card fo-slider__card--bg-red">
-                            <span class="fo-slider__img-wrapper">
-                                <img src="./assets/images/slider-card-img-1.png" alt="Appetizer" class="fo-slider__img">
-                            </span>
-                            <span class="fo-slider__text">Lasagna</span>
-                        </label><!-- card end -->
-                        <label for="categories_slider_5" class="fo-slider__card fo-slider__card--bg-green">
-                            <span class="fo-slider__img-wrapper">
-                                <img src="./assets/images/slider-card-img-1.png" alt="Appetizer" class="fo-slider__img">
-                            </span>
-                            <span class="fo-slider__text">For Kids</span>
-                        </label><!-- card end -->
-                        <label for="categories_slider_6" class="fo-slider__card">
-                            <span class="fo-slider__img-wrapper">
-                                <img src="./assets/images/slider-card-img-1.png" alt="Appetizer" class="fo-slider__img">
-                            </span>
-                            <span class="fo-slider__text">Drink</span>
-                        </label><!-- card end -->
-                        <label for="categories_slider_7" class="fo-slider__card">
-                            <span class="fo-slider__img-wrapper">
-                                <img src="./assets/images/slider-card-img-1.png" alt="Appetizer" class="fo-slider__img">
-                            </span>
-                            <span class="fo-slider__text">Appetizer</span>
-                        </label><!-- card end -->
-                        <label for="categories_slider_8" class="fo-slider__card">
-                            <span class="fo-slider__img-wrapper">
-                                <img src="./assets/images/slider-card-img-1.png" alt="Appetizer" class="fo-slider__img">
-                            </span>
-                            <span class="fo-slider__text">Lasagna</span>
-                        </label><!-- card end --> 
+                <div class="fo-slider__main-container">
+                    <div class="fo-slider">
+                        <h2 class="fo-slider__title">Menu</h2>
+                        <div class="fo-slider__wrapper">
+                            <!-- <span class="fo-slider__pill">
+                                <span class="fo-slider__img-wrapper">
+                                    <img src="./assets/images/slider-card-img-1.png" alt="Appetizer" class="fo-slider__img">
+                                </span>
+                                <span class="fo-slider__text">Appetizer</span>
+                            </span> -->
+    
+                            <!-- card search -->
+                            <label for="categories_slider_1" class="fo-slider__card fo-slider__card--menu fo-slider__card--bg-neutral">
+                                <span class="fo-icon fo-icon--tertiary">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M5.75 10.5C5.75 7.87665 7.87665 5.75 10.5 5.75C13.1234 5.75 15.25 7.87665 15.25 10.5C15.25 13.1234 13.1234 15.25 10.5 15.25C7.87665 15.25 5.75 13.1234 5.75 10.5ZM10.5 4.25C7.04822 4.25 4.25 7.04822 4.25 10.5C4.25 13.9518 7.04822 16.75 10.5 16.75C11.9616 16.75 13.3059 16.2483 14.3703 15.4078C14.3985 15.4512 14.4316 15.4923 14.4697 15.5303L19.4697 20.5303C19.7626 20.8232 20.2374 20.8232 20.5303 20.5303C20.8232 20.2374 20.8232 19.7626 20.5303 19.4697L15.5303 14.4697C15.4923 14.4316 15.4512 14.3985 15.4078 14.3703C16.2483 13.3059 16.75 11.9616 16.75 10.5C16.75 7.04822 13.9518 4.25 10.5 4.25Z" fill="currentColor"/>
+                                    </svg>                                    
+                                </span>
+                                <span class="fo-slider__text fo-slider__text--menu">MENU</span>
+                            </label><!-- card search end -->
+                            <label for="categories_slider_1" class="fo-slider__card fo-slider__card--bg-orange">
+                                <span class="fo-slider__img-wrapper">
+                                    <img src="./assets/images/slider-card-img-1.png" alt="Appetizer" class="fo-slider__img">
+                                </span>
+                                <span class="fo-slider__text">Appetizer</span>
+                            </label><!-- card end -->
+                            <label for="categories_slider_2" class="fo-slider__card fo-slider__card--bg-blue">
+                                <span class="fo-slider__img-wrapper">
+                                    <img src="./assets/images/slider-card-img-2.png" alt="Appetizer" class="fo-slider__img">
+                                </span>
+                                <span class="fo-slider__text">Salad Soup</span>
+                            </label><!-- card end -->
+                            <label for="categories_slider_3" class="fo-slider__card fo-slider__card--bg-purple">
+                                <span class="fo-slider__img-wrapper">
+                                    <img src="./assets/images/slider-card-img-1.png" alt="Appetizer" class="fo-slider__img">
+                                </span>
+                                <span class="fo-slider__text">Risotto</span>
+                            </label><!-- card end -->
+                            <label for="categories_slider_4" class="fo-slider__card fo-slider__card--bg-red">
+                                <span class="fo-slider__img-wrapper">
+                                    <img src="./assets/images/slider-card-img-1.png" alt="Appetizer" class="fo-slider__img">
+                                </span>
+                                <span class="fo-slider__text">Lasagna</span>
+                            </label><!-- card end -->
+                            <a href="#fo_scroll_to" for="categories_slider_5" class="fo-slider__card fo-slider__card--bg-green">
+                                <span class="fo-slider__img-wrapper">
+                                    <img src="./assets/images/slider-card-img-1.png" alt="Appetizer" class="fo-slider__img">
+                                </span>
+                                <span class="fo-slider__text">For Kids</span>
+                            </a><!-- card end -->
+                            <label for="categories_slider_6" class="fo-slider__card">
+                                <span class="fo-slider__img-wrapper">
+                                    <img src="./assets/images/slider-card-img-1.png" alt="Appetizer" class="fo-slider__img">
+                                </span>
+                                <span class="fo-slider__text">Drink</span>
+                            </label><!-- card end -->
+                            <label for="categories_slider_7" class="fo-slider__card">
+                                <span class="fo-slider__img-wrapper">
+                                    <img src="./assets/images/slider-card-img-1.png" alt="Appetizer" class="fo-slider__img">
+                                </span>
+                                <span class="fo-slider__text">Appetizer</span>
+                            </label><!-- card end -->
+                            <label for="categories_slider_8" class="fo-slider__card">
+                                <span class="fo-slider__img-wrapper">
+                                    <img src="./assets/images/slider-card-img-1.png" alt="Appetizer" class="fo-slider__img">
+                                </span>
+                                <span class="fo-slider__text">Lasagna</span>
+                            </label><!-- card end --> 
+                        </div>
                     </div>
 
                     <!-- slider controls -->
@@ -171,10 +181,56 @@
                     </button>
                     <!-- slider controls end -->
                 </div>
+
+                <!-- pill shaped menu -->
+                <div class="fo-slider__main-container">
+                    <div class="fo-slider fo-slider--pills">
+                        <div class="fo-slider__wrapper fo-slider__wrapper--pills">
+                            <span class="fo-slider__pill">
+                                <span class="fo-slider__img-wrapper">
+                                    <img src="./assets/images/slider-card-img-1.png" alt="Appetizer" class="fo-slider__img">
+                                </span>
+                                <span class="fo-slider__text">Appetizer</span>
+                            </span>
+                            <span class="fo-slider__pill">
+                                <span class="fo-slider__img-wrapper">
+                                    <img src="./assets/images/slider-card-img-1.png" alt="Appetizer" class="fo-slider__img">
+                                </span>
+                                <span class="fo-slider__text">Appetizer</span>
+                            </span>
+                            <span class="fo-slider__pill">
+                                <span class="fo-slider__img-wrapper">
+                                    <img src="./assets/images/slider-card-img-1.png" alt="Appetizer" class="fo-slider__img">
+                                </span>
+                                <span class="fo-slider__text">Appetizer</span>
+                            </span>
+                            <span class="fo-slider__pill">
+                                <span class="fo-slider__img-wrapper">
+                                    <img src="./assets/images/slider-card-img-1.png" alt="Appetizer" class="fo-slider__img">
+                                </span>
+                                <span class="fo-slider__text">Appetizer</span>
+                            </span>
+                            <span class="fo-slider__pill">
+                                <span class="fo-slider__img-wrapper">
+                                    <img src="./assets/images/slider-card-img-1.png" alt="Appetizer" class="fo-slider__img">
+                                </span>
+                                <span class="fo-slider__text">Appetizer</span>
+                            </span>
+                        </div>
+                    </div>
+
+                    <button class="fo-slider__btn fo-slider__btn--next">
+                        <span class="fo-icon">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M7.19698 15.303C6.9529 15.0589 6.9529 14.6632 7.19698 14.4191L11.6161 9.99991L7.19697 5.58074C6.9529 5.33666 6.9529 4.94093 7.19697 4.69685C7.44105 4.45277 7.83678 4.45277 8.08086 4.69685L12.942 9.55796C13.186 9.80204 13.186 10.1978 12.942 10.4418L8.08086 15.303C7.83678 15.547 7.44105 15.547 7.19698 15.303Z" fill="currentColor"/>
+                            </svg>                                
+                        </span>
+                    </button>
+                </div>
             </div>
 
             <div class="fo-section fo-max-width">
-                <div class="fo-main__content">
+                <div class="fo-main__content" id="fo_scroll_to">
                     <section style="flex: 1; max-width: 100%; padding: 32px 0 0;">
                         <h1 class="fo-h1 fo-h1--regular">Offers</h1>
                         <!-- slider of pill shaped menus -->
@@ -404,7 +460,14 @@
             <span class="fo-menu__cart-total">0,00 &euro;</span>
         </div>
 
-        <span class="fo-menu__btn">MENU</span>
+        <label for="mobile_menu">
+            <span class="fo-menu__btn fo-menu__btn--open">MENU</span>
+            <span class="fo-menu__btn fo-menu__btn--close">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M17.5893 7.58928C17.9148 7.26384 17.9148 6.7362 17.5893 6.41076C17.2639 6.08533 16.7363 6.08533 16.4108 6.41076L12.0001 10.8215L7.58934 6.41076C7.2639 6.08533 6.73626 6.08533 6.41083 6.41076C6.08539 6.7362 6.08539 7.26384 6.41083 7.58928L10.8216 12L6.41083 16.4108C6.08539 16.7362 6.08539 17.2638 6.41083 17.5893C6.73626 17.9147 7.2639 17.9147 7.58934 17.5893L12.0001 13.1785L16.4108 17.5893C16.7363 17.9147 17.2639 17.9147 17.5893 17.5893C17.9148 17.2638 17.9148 16.7362 17.5893 16.4108L13.1786 12L17.5893 7.58928Z" fill="white"/>
+                </svg>                    
+            </span>
+        </label>
     </div>
 
     <div class="fo-slider__menu">
@@ -635,7 +698,86 @@
 
     <!-- beside cart on smaller devices -->
     <div class="fo-menu__menus-opened">
+        <form action="" class="fo-form__search">
+            <input type="text" name="search" id="search" placeholder="The name of any dish: sushi, burger, etc" class="fo-field__search">
+        </form>
 
+        <div class="fo-menu__cards">
+            <div class="fo-menu__card fo-slider__card--bg-orange">
+                <div class="fo-menu__card-content-wrapper">
+                    <p class="fo-menu__card-heading">Offers</p>
+                    <div class="fo-menu__card-tags">
+                        <span>Specials</span> &bull; 
+                        <span>Offers</span> &bull; 
+                        <span>Fitlab</span>
+                    </div>
+                </div>
+                <img src="./assets/images/menu-image.png" alt="" class="fo-menu__menus-card-img">
+            </div>
+
+            <div class="fo-menu__card fo-slider__card--bg-blue">
+                <div class="fo-menu__card-content-wrapper">
+                    <p class="fo-menu__card-heading">Appetizers</p>
+                </div>
+                <img src="./assets/images/menu-image.png" alt="" class="fo-menu__menus-card-img">
+            </div>
+
+            <div class="fo-menu__card fo-slider__card--bg-purple">
+                <div class="fo-menu__card-content-wrapper">
+                    <p class="fo-menu__card-heading">Salad Soup</p>
+                    <div class="fo-menu__card-tags">
+                        <span>Salads</span> &bull; 
+                        <span>Fitlab</span> &bull; 
+                        <span>Soups</span>
+                    </div>
+                </div>
+                <img src="./assets/images/menu-image.png" alt="" class="fo-menu__menus-card-img">
+            </div>
+
+            <div class="fo-menu__card fo-slider__card--bg-red">
+                <div class="fo-menu__card-content-wrapper">
+                    <p class="fo-menu__card-heading">Pasta Risotto</p>
+                    <div class="fo-menu__card-tags">
+                        <span>Vegetarian</span> &bull; 
+                        <span>With seafood</span> &bull; 
+                        <span>With meat</span> &bull;
+                        <span>Risotto</span> &bull;
+                        <span>Specials</span>
+                    </div>
+                </div>
+                <img src="./assets/images/menu-image.png" alt="" class="fo-menu__menus-card-img">
+            </div>
+
+            <div class="fo-menu__card fo-slider__card--bg-green">
+                <div class="fo-menu__card-content-wrapper">
+                    <p class="fo-menu__card-heading">Pizza Lasagne</p>
+                    <div class="fo-menu__card-tags">
+                        <span>Vegetarian</span> &bull; 
+                        <span>With meat</span> &bull;
+                        <span>With seafood</span>
+                    </div>
+                </div>
+                <img src="./assets/images/menu-image.png" alt="" class="fo-menu__menus-card-img">
+            </div>
+
+            <div class="fo-menu__card fo-slider__card--bg-orange">
+                <div class="fo-menu__card-content-wrapper">
+                    <p class="fo-menu__card-heading">For kids</p>
+                </div>
+                <img src="./assets/images/menu-image.png" alt="" class="fo-menu__menus-card-img">
+            </div>
+
+            <div class="fo-menu__card fo-slider__card--bg-blue">
+                <div class="fo-menu__card-content-wrapper">
+                    <p class="fo-menu__card-heading">Drinks</p>
+                    <div class="fo-menu__card-tags">
+                        <span>Soft drinks</span> &bull; 
+                        <span>Juices & ice cream cocktail</span>
+                    </div>
+                </div>
+                <img src="./assets/images/menu-image.png" alt="" class="fo-menu__menus-card-img">
+            </div>
+        </div>
     </div>
 </body>
 </html>
