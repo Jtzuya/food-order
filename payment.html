@@ -301,23 +301,6 @@
         </main>
     </div>
 
-    <style>
-        .fo-qr__scanner::after {
-            content: '';
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            min-width: 160px;
-            width: 160px;
-            min-height: 160px;
-            height: 160px;
-            background-color: papayawhip;
-            border: 2px solid white;
-            z-index: 100;
-        }
-    </style>
-
     <div class="fo-qr">
         <div class="fo-qr__wrapper">
             <label for="qr_scanner" class="fo-qr__close">
@@ -338,6 +321,12 @@
 
             <div class="fo-qr__scanner">
                 <img src="./assets/images/qr.png" alt="" class="fo-qr__image">
+                <span class="fo-qr__scanner-mask">
+                    <svg width="" height="" viewBox="0 0 386 386" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M386 0H0V386H386V0ZM273 113H113V273H273V113Z" fill="black" fill-opacity="0.4"/>
+                        <path d="M153 273H113V233M113 153V113H153M233 113H273V153M273 233V273H233" stroke="white" stroke-width="4"/>
+                    </svg>                                         
+                </span>
             </div>
 
             <p class="fo-qr__text">Point camera to the QR Code</p>
