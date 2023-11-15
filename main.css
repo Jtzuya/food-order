@@ -982,7 +982,12 @@ form button,
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: var(--clr-base-white);
+    /* background-color: var(--clr-base-white); */
+    background-color: transparent;
+}
+
+.fo-product__qty input {
+    color: var(--clr-text-secondary);
 }
 
 .fo-product__qty-btn {
@@ -1019,6 +1024,7 @@ form button,
     align-items: center;
     justify-content: center;
     background-color: var(--clr-neutral-100);
+    color: var(--clr-base-cta);
     border-radius: 56px;
 }
 
