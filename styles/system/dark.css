@@ -11,6 +11,7 @@
         --clr-add-btn: hsl(0, 0%, 100%);
         --clr-add-btn-ico: hsl(0, 0%, 0%);
         --clr-product-card: hsl(0, 0%, 0%);
+        --clr-bg-drawer: hsl(0, 0%, 0%);
 
         --clr-border: hsl(240, 3%, 30%);
         --shadow-border: 0 1px 2px 0 hsla(0, 0%, 100%, 0.05);
@@ -48,7 +49,7 @@
         --clr-product-card: #ffffff;
         --clr-product-card-border: transparent;
 
-        --clr-bg-drawer: hsl(0, 0%, 0%);
+        --clr-bg-drawer: hsl(0, 0%, 100%);
 
         --clr-add-btn: hsl(0, 0%, 0%);
         --clr-add-btn-ico: hsl(0, 0%, 100%);

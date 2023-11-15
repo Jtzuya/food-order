@@ -19,7 +19,7 @@
         --clr-product-card: #ffffff;
         --clr-product-card-border: transparent;
 
-        --clr-bg-drawer: hsl(0, 0%, 0%);
+        --clr-bg-drawer: hsl(0, 0%, 100%);
 
         --clr-add-btn: hsl(0, 0%, 0%);
         --clr-add-btn-ico: hsl(0, 0%, 100%);
@@ -63,7 +63,7 @@
         --clr-order-type-card: #2C2C2E;
         --clr-border-border: #4B4B4F;
 
-        --clr-bg-drawer: hsl(0, 0%, 100%);
+        --clr-bg-drawer: hsl(0, 0%, 0%);
     
         --clr-add-btn: hsl(0, 0%, 100%);
         --clr-add-btn-ico: hsl(0, 0%, 0%);
@@ -82,6 +82,10 @@
         --clr-neutral-50: hsl(270, 3%, 13%);
         --clr-neutral-100:  hsl(240, 3%, 22%);
         --clr-accent-green: #27A64B;
+    }
+
+    #system_appearance:checked ~ .fo-slider__menu {
+        background-color: var(--clr-base-black);
     }
 
     @media (min-width: 768px) {
