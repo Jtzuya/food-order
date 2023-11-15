@@ -873,7 +873,7 @@ form button,
     font-size: 3.6rem;
     color: var(--clr-text-primary);
     line-height: 38px;
-    padding-top: 56px;
+    padding-top: 32px;
     transition-delay: var(--duration);
 }
 
@@ -964,6 +964,14 @@ form button,
     font-size: 1.6rem;
     color: var(--clr-text-secondary);
     text-align: center;
+}
+
+.fo-product__option-title {
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .fo-product__cta {
