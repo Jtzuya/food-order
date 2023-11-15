@@ -753,7 +753,8 @@ form button,
 
 .fo-menu__wrapper {
     border-radius: 48px;
-    background-color: #E9E9E9;
+    background-color: var(--clr-neutral-100);
+    color: var(--clr-text-primary);
     flex: 1;
     display: flex;
     align-items: center;
@@ -777,10 +778,10 @@ form button,
     width: 56px;
     height: 56px;
     border-radius: 100%;
-    background-color: #000;
+    background-color: var(--clr-base-cta);
     display: grid;
     place-items: center;
-    color: #fff;
+    color: var(--clr-btn-primary);
     cursor: pointer;
     user-select: none;
     -ms-user-select: none;
