@@ -1701,6 +1701,28 @@ input[type="time"]::-webkit-datetime-edit-ampm-field {
     display: none;
 }
 
+/* menu on desktop */
+.fo-form__search-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 16px;
+}
+
+.fo-menu__btn-close-desktop {
+    font-size: 1.2rem;
+    width: 48px;
+    height: 48px;
+    border-radius: 100%;
+    background-color: var(--clr-base-cta);
+    display: grid;
+    place-items: center;
+    color: var(--clr-btn-primary);
+    cursor: pointer;
+    user-select: none;
+    -ms-user-select: none;
+}
+
 /* menu beside cart on mobile */
 .fo-menu__btn {
     display: none;
@@ -1728,7 +1750,7 @@ input[type="time"]::-webkit-datetime-edit-ampm-field {
 }
 
 .fo-form__search {
-    margin-bottom: 16px;
+    flex: 1;
 }
 
 .fo-field__search {

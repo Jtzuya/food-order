@@ -75,10 +75,11 @@ body:has(#order_type:checked) { overflow: hidden; }
     #mobile_menu:checked ~ .fo-menu__fixed .fo-menu__btn.fo-menu__btn--close {
         display: grid!important;
     }
-    
-    #mobile_menu:checked ~ .fo-menu__menus-opened {
-        top: 0%;
-    }
+}
+
+/* menu with search bar */
+#mobile_menu:checked ~ .fo-menu__menus-opened {
+    top: 0%;
 }
 
 @media (max-width: 900px) {

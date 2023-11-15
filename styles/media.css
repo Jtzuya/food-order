@@ -112,6 +112,10 @@
         border-top-right-radius: 32px;
     }
 
+    .fo-menu__btn-close-desktop {
+        display: none;
+    }
+
     .fo-modal {
         scale: 1;
         top: 100%;
@@ -215,7 +219,11 @@
     }
 
     .fo-menu__menus-opened {
-        display: none;
+        padding: 12px 12px;
+    }
+    
+    .fo-menu__cards {
+        grid-template-columns: repeat(3,minmax(0,1fr));
     }
 }
 
