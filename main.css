@@ -1298,6 +1298,7 @@ input[type="time"]::-webkit-datetime-edit-ampm-field {
     top: 0;
     width: 100%;
     height: max-content;
+    z-index: 5;
 }
 
 .fo-payment__body-text {
