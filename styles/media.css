@@ -172,6 +172,14 @@
 }
 
 @media (min-width: 768px) {
+    swiper-container {
+        display: block;
+    }
+
+    .fo-slider__wrapper {
+        display: none;
+    }
+
     .fo-main {
         padding: 24px 0;
     }

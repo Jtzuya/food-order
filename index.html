@@ -11,6 +11,9 @@
     <link rel="stylesheet" href="./styles/media.css">
     <link rel="stylesheet" href="./styles/interactions.css">
     <link rel="stylesheet" href="./styles/virtual.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </head>
 <body>
     <!-- for interactions -->
@@ -105,14 +108,92 @@
                 <div class="fo-slider__main-container">
                     <div class="fo-slider">
                         <h2 class="fo-slider__title">Menu</h2>
+                        <swiper-container class="mySwiper" init="false" navigation="true">
+                            <swiper-slide>
+                                <label for="mobile_menu" class="fo-slider__card fo-slider__card--menu fo-slider__card--bg-neutral">
+                                    <span class="fo-icon fo-icon--tertiary">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M5.75 10.5C5.75 7.87665 7.87665 5.75 10.5 5.75C13.1234 5.75 15.25 7.87665 15.25 10.5C15.25 13.1234 13.1234 15.25 10.5 15.25C7.87665 15.25 5.75 13.1234 5.75 10.5ZM10.5 4.25C7.04822 4.25 4.25 7.04822 4.25 10.5C4.25 13.9518 7.04822 16.75 10.5 16.75C11.9616 16.75 13.3059 16.2483 14.3703 15.4078C14.3985 15.4512 14.4316 15.4923 14.4697 15.5303L19.4697 20.5303C19.7626 20.8232 20.2374 20.8232 20.5303 20.5303C20.8232 20.2374 20.8232 19.7626 20.5303 19.4697L15.5303 14.4697C15.4923 14.4316 15.4512 14.3985 15.4078 14.3703C16.2483 13.3059 16.75 11.9616 16.75 10.5C16.75 7.04822 13.9518 4.25 10.5 4.25Z" fill="currentColor"/>
+                                        </svg>                                    
+                                    </span>
+                                    <span class="fo-slider__text fo-slider__text--menu">MENU</span>
+                                </label><!-- card search end -->
+                            </swiper-slide>
+                            <swiper-slide>
+                                <label for="categories_slider_1" class="fo-slider__card fo-slider__card--bg-orange">
+                                    <span class="fo-slider__img-wrapper">
+                                        <img src="./assets/images/slider-card-img-1.png" alt="Appetizer" class="fo-slider__img">
+                                    </span>
+                                    <span class="fo-slider__text">Appetizer</span>
+                                </label><!-- card end -->
+                            </swiper-slide>
+                            <swiper-slide>
+                                <label for="categories_slider_2" class="fo-slider__card fo-slider__card--bg-blue">
+                                    <span class="fo-slider__img-wrapper">
+                                        <img src="./assets/images/slider-card-img-2.png" alt="Appetizer" class="fo-slider__img">
+                                    </span>
+                                    <span class="fo-slider__text">Salad Soup</span>
+                                </label><!-- card end -->
+                            </swiper-slide>
+                            <swiper-slide>
+                                <label for="categories_slider_3" class="fo-slider__card fo-slider__card--bg-purple">
+                                    <span class="fo-slider__img-wrapper">
+                                        <img src="./assets/images/slider-card-img-1.png" alt="Appetizer" class="fo-slider__img">
+                                    </span> 
+                                    <span class="fo-slider__text">Risotto</span>
+                                </label><!-- card end -->
+                            </swiper-slide>
+                            <swiper-slide>
+                                <label for="categories_slider_1" class="fo-slider__card fo-slider__card--bg-orange">
+                                    <span class="fo-slider__img-wrapper">
+                                        <img src="./assets/images/slider-card-img-1.png" alt="Appetizer" class="fo-slider__img">
+                                    </span>
+                                    <span class="fo-slider__text">Appetizer</span>
+                                </label><!-- card end -->
+                            </swiper-slide>
+                            <swiper-slide>
+                                <label for="categories_slider_2" class="fo-slider__card fo-slider__card--bg-blue">
+                                    <span class="fo-slider__img-wrapper">
+                                        <img src="./assets/images/slider-card-img-2.png" alt="Appetizer" class="fo-slider__img">
+                                    </span>
+                                    <span class="fo-slider__text">Salad Soup</span>
+                                </label><!-- card end -->
+                            </swiper-slide>
+                            <swiper-slide>
+                                <label for="categories_slider_3" class="fo-slider__card fo-slider__card--bg-purple">
+                                    <span class="fo-slider__img-wrapper">
+                                        <img src="./assets/images/slider-card-img-1.png" alt="Appetizer" class="fo-slider__img">
+                                    </span> 
+                                    <span class="fo-slider__text">Risotto</span>
+                                </label><!-- card end -->
+                            </swiper-slide>
+                            <swiper-slide>
+                                <label for="categories_slider_4" class="fo-slider__card fo-slider__card--bg-red">
+                                    <span class="fo-slider__img-wrapper">
+                                        <img src="./assets/images/slider-card-img-1.png" alt="Appetizer" class="fo-slider__img">
+                                    </span>
+                                    <span class="fo-slider__text">Lasagna</span>
+                                </label><!-- card end -->
+                            </swiper-slide>
+                            <swiper-slide>
+                                <a href="#fo_scroll_to" for="categories_slider_5" class="fo-slider__card fo-slider__card--bg-green">
+                                    <span class="fo-slider__img-wrapper">
+                                        <img src="./assets/images/slider-card-img-1.png" alt="Appetizer" class="fo-slider__img">
+                                    </span>
+                                    <span class="fo-slider__text">For Kids</span>
+                                </a><!-- card end -->
+                            </swiper-slide>
+                            <swiper-slide>
+                                <label for="categories_slider_6" class="fo-slider__card">
+                                    <span class="fo-slider__img-wrapper">
+                                        <img src="./assets/images/slider-card-img-1.png" alt="Appetizer" class="fo-slider__img">
+                                    </span>
+                                    <span class="fo-slider__text">Drink</span>
+                                </label><!-- card end -->
+                            </swiper-slide>
+                        </swiper-container>
+
                         <div class="fo-slider__wrapper">
-                            <!-- <span class="fo-slider__pill">
-                                <span class="fo-slider__img-wrapper">
-                                    <img src="./assets/images/slider-card-img-1.png" alt="Appetizer" class="fo-slider__img">
-                                </span>
-                                <span class="fo-slider__text">Appetizer</span>
-                            </span> -->
-    
                             <!-- card search -->
                             <label for="mobile_menu" class="fo-slider__card fo-slider__card--menu fo-slider__card--bg-neutral">
                                 <span class="fo-icon fo-icon--tertiary">
@@ -137,7 +218,7 @@
                             <label for="categories_slider_3" class="fo-slider__card fo-slider__card--bg-purple">
                                 <span class="fo-slider__img-wrapper">
                                     <img src="./assets/images/slider-card-img-1.png" alt="Appetizer" class="fo-slider__img">
-                                </span>
+                                </span> 
                                 <span class="fo-slider__text">Risotto</span>
                             </label><!-- card end -->
                             <label for="categories_slider_4" class="fo-slider__card fo-slider__card--bg-red">
@@ -174,13 +255,13 @@
                     </div>
 
                     <!-- slider controls -->
-                    <button class="fo-slider__btn fo-slider__btn--next">
+                    <!-- <button class="fo-slider__btn fo-slider__btn--next">
                         <span class="fo-icon">
                             <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path fill-rule="evenodd" clip-rule="evenodd" d="M7.19698 15.303C6.9529 15.0589 6.9529 14.6632 7.19698 14.4191L11.6161 9.99991L7.19697 5.58074C6.9529 5.33666 6.9529 4.94093 7.19697 4.69685C7.44105 4.45277 7.83678 4.45277 8.08086 4.69685L12.942 9.55796C13.186 9.80204 13.186 10.1978 12.942 10.4418L8.08086 15.303C7.83678 15.547 7.44105 15.547 7.19698 15.303Z" fill="currentColor"/>
                             </svg>                                
                         </span>
-                    </button>
+                    </button> -->
                     <!-- slider controls end -->
                 </div>
 
@@ -421,7 +502,7 @@
                                                 <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                     <path d="M10.7895 11.7886L13.5336 9.04453C13.7961 8.78204 13.6102 8.33323 13.239 8.33323L7.75084 8.33323C7.37963 8.33323 7.19372 8.78204 7.45621 9.04453L10.2003 11.7886C10.363 11.9513 10.6268 11.9513 10.7895 11.7886Z" fill="#444349"/>
                                                 </svg>                                                    
-                                            </span>
+                                            </span> 
                                         </span>
                                         <span class="fo-select__country-code">&plus;372</span>
                                         <input type="text" placeholder="Enter your number">
@@ -722,7 +803,8 @@
         <div class="fo-menu__cards">
             <div class="fo-menu__card fo-slider__card--bg-orange">
                 <div class="fo-menu__card-content-wrapper">
-                    <p class="fo-menu__card-heading">Offers</p>
+                    <p class="fo-menu__card-hea
+                    ing">Offers</p>
                     <div class="fo-menu__card-tags">
                         <span>Specials</span> &bull; 
                         <span>Offers</span> &bull; 
@@ -796,5 +878,77 @@
             </div>
         </div>
     </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+    <script>
+        const swiperEl = document.querySelector('swiper-container')
+        Object.assign(swiperEl, {
+            slidesPerView: 1,
+            spaceBetween: 10,
+            breakpoints: {
+                768: {
+                slidesPerView: 4,
+                spaceBetween: 40,
+                },
+                900: {
+                    slidesPerView: 4.5,
+                },
+                1024: {
+                    slidesPerView: 5.5,
+                    spaceBetween: 16,
+                },
+                1280: {
+                    slidesPerView: 7.75,
+                    spaceBetween: 16,
+                },
+            },
+            injectStyles: [
+                `
+                    .swiper-button-prev.swiper-button-disabled,
+                    .swiper-button-next.swiper-button-disabled {
+                        opacity: 0;
+                    }
+
+                    .swiper-button {
+                        background-repeat: no-repeat;
+                    }
+
+                    .swiper-button-prev {
+                        background-image: url("./assets/icons/slider-arrow.svg");
+                        background-repeat: no-repeat;
+                        background-position: center;
+                        transform: rotate(180deg) translateX(29px);
+                        border-radius: 100%;
+                        background-color: white;
+                        width: 36px;
+                        min-width: 36px;
+                        height: 36px;
+                        min-height: 36px;
+                        box-shadow: var(--chevron-shadow);
+                    }
+
+                    .swiper-button-next {
+                        background-image: url("./assets/icons/slider-arrow.svg");
+                        background-repeat: no-repeat;
+                        background-position: center;
+                        border-radius: 100%;
+                        background-color: white;
+                        width: 36px;
+                        min-width: 36px;
+                        height: 36px;
+                        min-height: 36px;
+                        box-shadow: var(--chevron-shadow);
+                        transform: translateX(29px);
+                    }
+
+                    .swiper-button-prev svg,
+                    .swiper-button-next svg {
+                        display: none;
+                    }
+                `
+            ]
+        });
+        swiperEl.initialize();
+    </script>
 </body>
 </html>

@@ -4,52 +4,90 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <style>
+        html,
+        body {
+          position: relative;
+          height: 100%;
+        }
+    
+        body {
+          background: #eee;
+          font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+          font-size: 14px;
+          color: #000;
+          margin: 0;
+          padding: 0;
+        }
+    
+        swiper-container {
+          width: 100%;
+          height: 100%;
+          max-height: 164px;
+        }
+    
+        swiper-slide {
+          text-align: center;
+          font-size: 18px;
+          background: #fff;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+    
+        swiper-slide img {
+          display: block;
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+
+        /* .disabled_swiper_button {
+            display: none!important;
+        } */
+    </style>
 </head>
 <body>
-    <div class="fo-section fo-max-width">
-        <div class="fo-slider fo-slider--pills">
-            <div class="fo-slider__wrapper fo-slider__wrapper--pills">
-                <span class="fo-slider__pill">
-                    <span class="fo-slider__img-wrapper">
-                        <img src="./assets/images/slider-card-img-1.png" alt="Appetizer" class="fo-slider__img">
-                    </span>
-                    <span class="fo-slider__text">Appetizer</span>
-                </span>
-                <span class="fo-slider__pill">
-                    <span class="fo-slider__img-wrapper">
-                        <img src="./assets/images/slider-card-img-1.png" alt="Appetizer" class="fo-slider__img">
-                    </span>
-                    <span class="fo-slider__text">Appetizer</span>
-                </span>
-                <span class="fo-slider__pill">
-                    <span class="fo-slider__img-wrapper">
-                        <img src="./assets/images/slider-card-img-1.png" alt="Appetizer" class="fo-slider__img">
-                    </span>
-                    <span class="fo-slider__text">Appetizer</span>
-                </span>
-                <span class="fo-slider__pill">
-                    <span class="fo-slider__img-wrapper">
-                        <img src="./assets/images/slider-card-img-1.png" alt="Appetizer" class="fo-slider__img">
-                    </span>
-                    <span class="fo-slider__text">Appetizer</span>
-                </span>
-                <span class="fo-slider__pill">
-                    <span class="fo-slider__img-wrapper">
-                        <img src="./assets/images/slider-card-img-1.png" alt="Appetizer" class="fo-slider__img">
-                    </span>
-                    <span class="fo-slider__text">Appetizer</span>
-                </span>
-            </div>
-            <!-- slider controls -->
-            <button class="fo-slider__btn fo-slider__btn--next">
-                <span class="fo-icon">
-                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M7.19698 15.303C6.9529 15.0589 6.9529 14.6632 7.19698 14.4191L11.6161 9.99991L7.19697 5.58074C6.9529 5.33666 6.9529 4.94093 7.19697 4.69685C7.44105 4.45277 7.83678 4.45277 8.08086 4.69685L12.942 9.55796C13.186 9.80204 13.186 10.1978 12.942 10.4418L8.08086 15.303C7.83678 15.547 7.44105 15.547 7.19698 15.303Z" fill="currentColor"/>
-                    </svg>                                
-                </span>
-            </button>
-            <!-- slider controls end -->
-        </div>
-    </div>
+    <swiper-container class="mySwiper" init="false" navigation="true">
+        <swiper-slide>Slide 1</swiper-slide>
+        <swiper-slide>Slide 2</swiper-slide>
+        <swiper-slide>Slide 3</swiper-slide>
+        <swiper-slide>Slide 4</swiper-slide>
+        <swiper-slide>Slide 5</swiper-slide>
+        <swiper-slide>Slide 6</swiper-slide>
+        <swiper-slide>Slide 7</swiper-slide>
+        <swiper-slide>Slide 8</swiper-slide>
+        <swiper-slide>Slide 9</swiper-slide>
+      </swiper-container>
+    
+      <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+    
+      <script>
+        const swiperEl = document.querySelector('swiper-container')
+        Object.assign(swiperEl, {
+          slidesPerView: 1,
+          spaceBetween: 10,
+          navigation: {
+            // disabledClass: 'disabled_swiper_button'
+          },
+          breakpoints: {
+            768: {
+              slidesPerView: 4,
+              spaceBetween: 40,
+            },
+            1024: {
+              slidesPerView: 5.5,
+              spaceBetween: 16,
+            },
+          },
+        });
+        swiperEl.initialize();
+        // window.addEventListener('DOMContentLoaded', e => {
+        //     (document.querySelectorAll('.swiper-button-disabled')).forEach(i => i.style.display = 'none');
+        // })
+      </script>
 </body>
 </html>
