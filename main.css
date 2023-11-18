@@ -565,6 +565,11 @@ swiper-slide {
 
 .fo-menu__card-img img {
     border-radius: 100%;
+    max-width: 126px;
+    max-height: 126px;
+    min-width: 126px;
+    min-height: 126px;
+    object-fit: cover;
 }
 
 .fo-menu__card-qty {

@@ -169,6 +169,10 @@
         top: 100%;
         transition: top var(--duration) ease-in-out;
     }
+
+    .mySwiper {
+        display: none;
+    }
 }
 
 @media (min-width: 768px) {

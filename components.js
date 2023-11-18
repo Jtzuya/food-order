@@ -1,21 +1,24 @@
-/**
- * @description - Custom component
- */
-class ProductMenu extends HTMLElement {
-    constructor() { super(); }
-
-    connectedCallback() {
-        let min = 3, max = 7, menusCount = Math.floor(Math.random() * (max - min)) + min;
-        // console.log('parent', this.parentElement)
-        console.log(this.generateMenu(menusCount))
-
-        document.querySelector('.fo-menus').innerHTML = this.generateMenu(menusCount);
+/*** @description - Custom component for set of menus */
+class ProductMenus extends HTMLElement {
+    constructor() { 
+        super(); 
+        this.set = ''
+        this.count = 0
     }
 
+    connectedCallback() {
+        let min = 3, max = 7;
+        this.count = Math.floor(Math.random() * (max - min)) + min;
+        this.set = this.getAttribute('set')
+
+        this.render()
+    }
+
+    /** @param {number} count */
     generateMenu(count) {
         let temp = '';
 
-        for(let i = 0; i < count; i++) {
+        for(let i = 0; i <= count; i++) {
             temp += `
                 <div class="fo-menu__card">
                     <!-- default state -->
@@ -27,7 +30,7 @@ class ProductMenu extends HTMLElement {
                         </div>
 
                         <div class="fo-menu__card-img">
-                            <img src="./assets/images/menu-image-1.png" alt="Tähtsate ninade pizza">
+                            <img src="https://picsum.photos/500/300?random=${this.set}" alt="Tähtsate ninade pizza">
                             <div class="fo-menu__card-qty">
                                 <label for="product_modal" class="fo-menu__card-add">
                                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -37,15 +40,16 @@ class ProductMenu extends HTMLElement {
                             </div>
                         </div>
                     </div>
-
-
-                    <!-- popup state -->
                 </div>
             `
         }
 
-        return temp
+        return temp;
+    }
+
+    render () {
+        this.parentElement.innerHTML = this.generateMenu(this.count)
     }
 }
 
-customElements.define('product-menu', ProductMenu)
+customElements.define('product-menus', ProductMenus)

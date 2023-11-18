@@ -18,14 +18,12 @@
 <body>
     <!-- for interactions -->
     <input type="checkbox" name="system_appearance" id="system_appearance" hidden>
-    <input type="radio" name="categories_slider" id="categories_slider_1" hidden >
+    <input type="radio" name="categories_slider" id="categories_slider_1" hidden checked>
     <input type="radio" name="categories_slider" id="categories_slider_2" hidden >
     <input type="radio" name="categories_slider" id="categories_slider_3" hidden >
     <input type="radio" name="categories_slider" id="categories_slider_4" hidden >
     <input type="radio" name="categories_slider" id="categories_slider_5" hidden >
     <input type="radio" name="categories_slider" id="categories_slider_6" hidden >
-    <input type="radio" name="categories_slider" id="categories_slider_7" hidden >
-    <input type="radio" name="categories_slider" id="categories_slider_8" hidden >
 
     <input type="radio" name="stacked_pill" id="stacked_pill_1" hidden checked>
     <input type="radio" name="stacked_pill" id="stacked_pill_2" hidden>
@@ -105,7 +103,7 @@
         <main class="fo-main">
             <!-- slider -->
             <div class="">
-                <div class="fo-slider__main-container fo-max-width">
+                <div class="fo-slider__main-container fo-section fo-max-width">
                     <div class="fo-slider">
                         <h2 class="fo-slider__title">Menu</h2>
                         <swiper-container class="mySwiper" init="false" navigation="true">
@@ -312,106 +310,127 @@
                             <label for="stacked_pill_3" role="button" class="fo-pill">Fitlab</label>
                         </div>
 
+                        <style>
+                            .fo-menus {
+                                display: none;
+                            }
+
+                            #categories_slider_1:checked ~ .fo-body .fo-menus--1,
+                            #categories_slider_2:checked ~ .fo-body .fo-menus--2,
+                            #categories_slider_3:checked ~ .fo-body .fo-menus--3,
+                            #categories_slider_4:checked ~ .fo-body .fo-menus--4,
+                            #categories_slider_5:checked ~ .fo-body .fo-menus--5,
+                            #categories_slider_6:checked ~ .fo-body .fo-menus--6 {
+                                display: grid;
+                            }
+                        </style>
+
                         <!-- set of menus -->
-                        <div class="fo-menus">
-                            <div class="fo-menu__card">
-                                <!-- default state -->
-                                <div class="fo-menu__card-wrapper">
-                                    <div class="fo-menu__card-content">
-                                        <h3 class="fo-menu__card-title">Tähtsate ninade pizza</h3>
-                                        <p class="fo-menu__card-info">With pepperoni, mozzarella cheese and Vapiano tomato sauce. Garnish with cherry tomatoes and basil.</p>
-                                        <span class="fo-menu__card-price">7,50 &euro;</span>
+                        <div class="fo-group">
+                            <div class="fo-menus fo-menus--1">
+                                <div class="fo-menu__card">
+                                    <!-- default state -->
+                                    <div class="fo-menu__card-wrapper">
+                                        <div class="fo-menu__card-content">
+                                            <h3 class="fo-menu__card-title">Tähtsate ninade pizza</h3>
+                                            <p class="fo-menu__card-info">With pepperoni, mozzarella cheese and Vapiano tomato sauce. Garnish with cherry tomatoes and basil.</p>
+                                            <span class="fo-menu__card-price">7,50 &euro;</span>
+                                        </div>
+    
+                                        <div class="fo-menu__card-img">
+                                            <img src="./assets/images/menu-image-1.png" alt="Tähtsate ninade pizza">
+                                            <div class="fo-menu__card-qty">
+                                                <label for="product_modal" class="fo-menu__card-add">
+                                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M12.75 6.16699C12.75 5.75278 12.4142 5.41699 12 5.41699C11.5858 5.41699 11.25 5.75278 11.25 6.16699V11.2502H6.16663C5.75241 11.2502 5.41663 11.586 5.41663 12.0002C5.41663 12.4145 5.75241 12.7502 6.16663 12.7502H11.25V17.8337C11.25 18.2479 11.5858 18.5837 12 18.5837C12.4142 18.5837 12.75 18.2479 12.75 17.8337V12.7502H17.8333C18.2475 12.7502 18.5833 12.4145 18.5833 12.0002C18.5833 11.586 18.2475 11.2502 17.8333 11.2502H12.75V6.16699Z" fill="currentColor"/>
+                                                    </svg>                                                    
+                                                </label>
+                                            </div>
+                                        </div>
                                     </div>
-
-                                    <div class="fo-menu__card-img">
-                                        <img src="./assets/images/menu-image-1.png" alt="Tähtsate ninade pizza">
-                                        <div class="fo-menu__card-qty">
-                                            <label for="product_modal" class="fo-menu__card-add">
-                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M12.75 6.16699C12.75 5.75278 12.4142 5.41699 12 5.41699C11.5858 5.41699 11.25 5.75278 11.25 6.16699V11.2502H6.16663C5.75241 11.2502 5.41663 11.586 5.41663 12.0002C5.41663 12.4145 5.75241 12.7502 6.16663 12.7502H11.25V17.8337C11.25 18.2479 11.5858 18.5837 12 18.5837C12.4142 18.5837 12.75 18.2479 12.75 17.8337V12.7502H17.8333C18.2475 12.7502 18.5833 12.4145 18.5833 12.0002C18.5833 11.586 18.2475 11.2502 17.8333 11.2502H12.75V6.16699Z" fill="currentColor"/>
-                                                </svg>                                                    
-                                            </label>
+    
+    
+                                    <!-- popup state -->
+                                </div>
+                                <div class="fo-menu__card">
+                                    <!-- default state -->
+                                    <div class="fo-menu__card-wrapper">
+                                        <div class="fo-menu__card-content">
+                                            <h3 class="fo-menu__card-title">Tähtsate ninade pizza</h3>
+                                            <p class="fo-menu__card-info">With pepperoni, mozzarella cheese and Vapiano tomato sauce. Garnish with cherry tomatoes and basil.</p>
+                                            <span class="fo-menu__card-price">7,50 &euro;</span>
+                                        </div>
+    
+                                        <div class="fo-menu__card-img">
+                                            <img src="./assets/images/menu-image-1.png" alt="Tähtsate ninade pizza">
+                                            <div class="fo-menu__card-qty fo-menu__card-qty--active">
+                                                <span class="fo-menu__card-remove">
+                                                    <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M18.75 7.23694H15.75V6.73694C15.75 6.20651 15.5393 5.6978 15.1642 5.32272C14.7891 4.94765 14.2804 4.73694 13.75 4.73694H10C9.46957 4.73694 8.96086 4.94765 8.58579 5.32272C8.21071 5.6978 8 6.20651 8 6.73694V7.23694H5C4.80109 7.23694 4.61032 7.31596 4.46967 7.45661C4.32902 7.59726 4.25 7.78803 4.25 7.98694C4.25 8.18585 4.32902 8.37662 4.46967 8.51727C4.61032 8.65792 4.80109 8.73694 5 8.73694H5.36L7 20.3769C7.02208 20.5572 7.1097 20.7231 7.24615 20.8429C7.38261 20.9628 7.55838 21.0283 7.74 21.0269H16C16.1816 21.0283 16.3574 20.9628 16.4938 20.8429C16.6303 20.7231 16.7179 20.5572 16.74 20.3769L18.39 8.73694H18.75C18.9489 8.73694 19.1397 8.65792 19.2803 8.51727C19.421 8.37662 19.5 8.18585 19.5 7.98694C19.5 7.78803 19.421 7.59726 19.2803 7.45661C19.1397 7.31596 18.9489 7.23694 18.75 7.23694ZM9.5 6.73694C9.50256 6.60513 9.55606 6.47944 9.64928 6.38622C9.7425 6.293 9.86819 6.2395 10 6.23694H13.75C13.8818 6.2395 14.0075 6.293 14.1007 6.38622C14.1939 6.47944 14.2474 6.60513 14.25 6.73694V7.23694H9.5V6.73694ZM15.39 19.4869H8.39L6.87 8.73694H16.87L15.39 19.4869Z" fill="currentColor"/>
+                                                    </svg>                                                    
+                                                </span>
+                                                <input type="number" name="qty" id="qty" class="fo-menu__card-qty-field" value="1" min="1" max="99">
+                                                <label for="product_modal" class="fo-menu__card-add">
+                                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M12.75 6.16699C12.75 5.75278 12.4142 5.41699 12 5.41699C11.5858 5.41699 11.25 5.75278 11.25 6.16699V11.2502H6.16663C5.75241 11.2502 5.41663 11.586 5.41663 12.0002C5.41663 12.4145 5.75241 12.7502 6.16663 12.7502H11.25V17.8337C11.25 18.2479 11.5858 18.5837 12 18.5837C12.4142 18.5837 12.75 18.2479 12.75 17.8337V12.7502H17.8333C18.2475 12.7502 18.5833 12.4145 18.5833 12.0002C18.5833 11.586 18.2475 11.2502 17.8333 11.2502H12.75V6.16699Z" fill="currentColor"/>
+                                                    </svg>                                                    
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+    
+    
+                                    <!-- popup state -->
+                                </div>
+                                <div class="fo-menu__card">
+                                    <!-- default state -->
+                                    <div class="fo-menu__card-wrapper">
+                                        <div class="fo-menu__card-content">
+                                            <h3 class="fo-menu__card-title">Tähtsate ninade pizza</h3>
+                                            <p class="fo-menu__card-info">With pepperoni, mozzarella cheese and Vapiano tomato sauce. Garnish with cherry tomatoes and basil.</p>
+                                            <span class="fo-menu__card-price">7,50 &euro;</span>
+                                        </div>
+    
+                                        <div class="fo-menu__card-img">
+                                            <img src="./assets/images/menu-image-1.png" alt="Tähtsate ninade pizza">
+                                            <div class="fo-menu__card-qty">
+                                                <input type="number" name="qty" id="qty" class="fo-menu__card-qty-field" value="1" min="1" max="99">
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-
-
-                                <!-- popup state -->
-                            </div>
-                            <div class="fo-menu__card">
-                                <!-- default state -->
-                                <div class="fo-menu__card-wrapper">
-                                    <div class="fo-menu__card-content">
-                                        <h3 class="fo-menu__card-title">Tähtsate ninade pizza</h3>
-                                        <p class="fo-menu__card-info">With pepperoni, mozzarella cheese and Vapiano tomato sauce. Garnish with cherry tomatoes and basil.</p>
-                                        <span class="fo-menu__card-price">7,50 &euro;</span>
-                                    </div>
-
-                                    <div class="fo-menu__card-img">
-                                        <img src="./assets/images/menu-image-1.png" alt="Tähtsate ninade pizza">
-                                        <div class="fo-menu__card-qty fo-menu__card-qty--active">
-                                            <span class="fo-menu__card-remove">
-                                                <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M18.75 7.23694H15.75V6.73694C15.75 6.20651 15.5393 5.6978 15.1642 5.32272C14.7891 4.94765 14.2804 4.73694 13.75 4.73694H10C9.46957 4.73694 8.96086 4.94765 8.58579 5.32272C8.21071 5.6978 8 6.20651 8 6.73694V7.23694H5C4.80109 7.23694 4.61032 7.31596 4.46967 7.45661C4.32902 7.59726 4.25 7.78803 4.25 7.98694C4.25 8.18585 4.32902 8.37662 4.46967 8.51727C4.61032 8.65792 4.80109 8.73694 5 8.73694H5.36L7 20.3769C7.02208 20.5572 7.1097 20.7231 7.24615 20.8429C7.38261 20.9628 7.55838 21.0283 7.74 21.0269H16C16.1816 21.0283 16.3574 20.9628 16.4938 20.8429C16.6303 20.7231 16.7179 20.5572 16.74 20.3769L18.39 8.73694H18.75C18.9489 8.73694 19.1397 8.65792 19.2803 8.51727C19.421 8.37662 19.5 8.18585 19.5 7.98694C19.5 7.78803 19.421 7.59726 19.2803 7.45661C19.1397 7.31596 18.9489 7.23694 18.75 7.23694ZM9.5 6.73694C9.50256 6.60513 9.55606 6.47944 9.64928 6.38622C9.7425 6.293 9.86819 6.2395 10 6.23694H13.75C13.8818 6.2395 14.0075 6.293 14.1007 6.38622C14.1939 6.47944 14.2474 6.60513 14.25 6.73694V7.23694H9.5V6.73694ZM15.39 19.4869H8.39L6.87 8.73694H16.87L15.39 19.4869Z" fill="currentColor"/>
-                                                </svg>                                                    
-                                            </span>
-                                            <input type="number" name="qty" id="qty" class="fo-menu__card-qty-field" value="1" min="1" max="99">
-                                            <label for="product_modal" class="fo-menu__card-add">
-                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M12.75 6.16699C12.75 5.75278 12.4142 5.41699 12 5.41699C11.5858 5.41699 11.25 5.75278 11.25 6.16699V11.2502H6.16663C5.75241 11.2502 5.41663 11.586 5.41663 12.0002C5.41663 12.4145 5.75241 12.7502 6.16663 12.7502H11.25V17.8337C11.25 18.2479 11.5858 18.5837 12 18.5837C12.4142 18.5837 12.75 18.2479 12.75 17.8337V12.7502H17.8333C18.2475 12.7502 18.5833 12.4145 18.5833 12.0002C18.5833 11.586 18.2475 11.2502 17.8333 11.2502H12.75V6.16699Z" fill="currentColor"/>
-                                                </svg>                                                    
-                                            </label>
+                                <div class="fo-menu__card">
+                                    <!-- default state -->
+                                    <div class="fo-menu__card-wrapper">
+                                        <div class="fo-menu__card-content">
+                                            <h3 class="fo-menu__card-title">Tähtsate ninade pizza</h3>
+                                            <p class="fo-menu__card-info">With pepperoni, mozzarella cheese and Vapiano tomato sauce. Garnish with cherry tomatoes and basil.</p>
+                                            <span class="fo-menu__card-price">7,50 &euro;</span>
+                                        </div>
+    
+                                        <div class="fo-menu__card-img">
+                                            <img src="./assets/images/menu-image-1.png" alt="Tähtsate ninade pizza">
+                                            <div class="fo-menu__card-qty">
+                                                <label for="product_modal" class="fo-menu__card-add">
+                                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M12.75 6.16699C12.75 5.75278 12.4142 5.41699 12 5.41699C11.5858 5.41699 11.25 5.75278 11.25 6.16699V11.2502H6.16663C5.75241 11.2502 5.41663 11.586 5.41663 12.0002C5.41663 12.4145 5.75241 12.7502 6.16663 12.7502H11.25V17.8337C11.25 18.2479 11.5858 18.5837 12 18.5837C12.4142 18.5837 12.75 18.2479 12.75 17.8337V12.7502H17.8333C18.2475 12.7502 18.5833 12.4145 18.5833 12.0002C18.5833 11.586 18.2475 11.2502 17.8333 11.2502H12.75V6.16699Z" fill="currentColor"/>
+                                                    </svg>                                                    
+                                                </label>
+                                            </div>
                                         </div>
                                     </div>
+    
+    
+                                    <!-- popup state -->
                                 </div>
-
-
-                                <!-- popup state -->
                             </div>
-                            <div class="fo-menu__card">
-                                <!-- default state -->
-                                <div class="fo-menu__card-wrapper">
-                                    <div class="fo-menu__card-content">
-                                        <h3 class="fo-menu__card-title">Tähtsate ninade pizza</h3>
-                                        <p class="fo-menu__card-info">With pepperoni, mozzarella cheese and Vapiano tomato sauce. Garnish with cherry tomatoes and basil.</p>
-                                        <span class="fo-menu__card-price">7,50 &euro;</span>
-                                    </div>
 
-                                    <div class="fo-menu__card-img">
-                                        <img src="./assets/images/menu-image-1.png" alt="Tähtsate ninade pizza">
-                                        <div class="fo-menu__card-qty">
-                                            <input type="number" name="qty" id="qty" class="fo-menu__card-qty-field" value="1" min="1" max="99">
-                                        </div>
-                                    </div>
-                                </div>
-
-
-                                <!-- popup state -->
-                            </div>
-                            <div class="fo-menu__card">
-                                <!-- default state -->
-                                <div class="fo-menu__card-wrapper">
-                                    <div class="fo-menu__card-content">
-                                        <h3 class="fo-menu__card-title">Tähtsate ninade pizza</h3>
-                                        <p class="fo-menu__card-info">With pepperoni, mozzarella cheese and Vapiano tomato sauce. Garnish with cherry tomatoes and basil.</p>
-                                        <span class="fo-menu__card-price">7,50 &euro;</span>
-                                    </div>
-
-                                    <div class="fo-menu__card-img">
-                                        <img src="./assets/images/menu-image-1.png" alt="Tähtsate ninade pizza">
-                                        <div class="fo-menu__card-qty">
-                                            <label for="product_modal" class="fo-menu__card-add">
-                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M12.75 6.16699C12.75 5.75278 12.4142 5.41699 12 5.41699C11.5858 5.41699 11.25 5.75278 11.25 6.16699V11.2502H6.16663C5.75241 11.2502 5.41663 11.586 5.41663 12.0002C5.41663 12.4145 5.75241 12.7502 6.16663 12.7502H11.25V17.8337C11.25 18.2479 11.5858 18.5837 12 18.5837C12.4142 18.5837 12.75 18.2479 12.75 17.8337V12.7502H17.8333C18.2475 12.7502 18.5833 12.4145 18.5833 12.0002C18.5833 11.586 18.2475 11.2502 17.8333 11.2502H12.75V6.16699Z" fill="currentColor"/>
-                                                </svg>                                                    
-                                            </label>
-                                        </div>
-                                    </div>
-                                </div>
-
-
-                                <!-- popup state -->
-                            </div>
+                            <!-- by component -->
+                            <div class="fo-menus fo-menus--2" set="1"><product-menus></product-menu></div>
+                            <div class="fo-menus fo-menus--3" set="2"><product-menus></product-menu></div>
+                            <div class="fo-menus fo-menus--4" set="3"><product-menus></product-menu></div>
+                            <div class="fo-menus fo-menus--5" set="4"><product-menus></product-menu></div>
+                            <div class="fo-menus fo-menus--6" set="1"><product-menus></product-menu></div>
                         </div>
                     </section>
 
@@ -792,8 +811,7 @@
         <div class="fo-menu__cards">
             <div class="fo-menu__card fo-slider__card--bg-orange">
                 <div class="fo-menu__card-content-wrapper">
-                    <p class="fo-menu__card-hea
-                    ing">Offers</p>
+                    <p class="fo-menu__card-heading">Offers</p>
                     <div class="fo-menu__card-tags">
                         <span>Specials</span> &bull; 
                         <span>Offers</span> &bull; 
@@ -868,6 +886,8 @@
         </div>
     </div>
 
+    <!-- scripts -->
+    <script src="./components.js" defer></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
     <script>
         const swiperEl = document.querySelector('swiper-container')
@@ -910,6 +930,8 @@
                     .swiper-button-prev {
                         background-image: url("./assets/icons/slider-arrow.svg");
                         background-repeat: no-repeat;
+
+                        
                         background-position: center;
                         transform: rotate(180deg) translateX(29px);
                         border-radius: 100%;
