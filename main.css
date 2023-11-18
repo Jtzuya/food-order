@@ -202,6 +202,10 @@ swiper-slide {
     align-items: center;
 }
 
+.fo-slider__main-container {
+    overflow: hidden;
+}
+
 .fo-slider,
 .fo-slider__main-container {
     position: relative;

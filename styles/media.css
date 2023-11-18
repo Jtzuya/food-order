@@ -176,6 +176,10 @@
         display: block;
     }
 
+    .fo-slider__card {
+        width: 100%;
+    }
+
     .fo-slider__wrapper {
         display: none;
     }
@@ -189,7 +193,7 @@
     }
 
     .fo-slider {
-        overflow-x: auto;
+        /* overflow-x: auto; */
         overscroll-behavior-x: contain;
         scroll-snap-type: x mandatory;
         -ms-overflow-style: none; /* for Internet Explorer, Edge */

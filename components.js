@@ -9,7 +9,7 @@ class ProductMenu extends HTMLElement {
         // console.log('parent', this.parentElement)
         console.log(this.generateMenu(menusCount))
 
-        this.parentElement.innerHTML = this.generateMenu(menusCount);
+        document.querySelector('.fo-menus').innerHTML = this.generateMenu(menusCount);
     }
 
     generateMenu(count) {
