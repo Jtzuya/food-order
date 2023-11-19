@@ -157,3 +157,12 @@ body:has(#order_type:checked) { overflow: hidden; }
 #payment_more_opt:checked ~ .fo-body .fo-payment__selection-hidden {
     display: grid;
 }
+
+#categories_slider_1:checked ~ .fo-body .fo-menus--1,
+#categories_slider_2:checked ~ .fo-body .fo-menus--2,
+#categories_slider_3:checked ~ .fo-body .fo-menus--3,
+#categories_slider_4:checked ~ .fo-body .fo-menus--4,
+#categories_slider_5:checked ~ .fo-body .fo-menus--5,
+#categories_slider_6:checked ~ .fo-body .fo-menus--6 {
+    display: grid;
+}

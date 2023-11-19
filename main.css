@@ -511,6 +511,7 @@ swiper-slide {
     grid-template-columns: minmax(0, 1fr);
     column-gap: 16px;
     row-gap: 16px;
+    display: none;
 }
 
 .fo-menu__card-wrapper {
