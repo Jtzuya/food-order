@@ -151,7 +151,7 @@ body {
     padding: 8px 16px;
 }
 
-#search,
+#search_v2,
 .fo-field__search-wrapper { display: none; }
 
 .fo-field__search-wrapper {
@@ -536,6 +536,11 @@ swiper-slide {
     grid-template-columns: minmax(0, 1fr);
     column-gap: 16px;
     row-gap: 16px;
+    display: none;
+}
+
+/* Hide all unchecked products */
+.fo-menu__card[data-item-tag] {
     display: none;
 }
 

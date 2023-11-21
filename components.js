@@ -4,6 +4,7 @@ class ProductMenus extends HTMLElement {
         super(); 
         this.set = ''
         this.count = 0
+        this.tags = ['Specials', 'Offers', 'Fitlab']
     }
 
     connectedCallback() {
@@ -19,8 +20,9 @@ class ProductMenus extends HTMLElement {
         let temp = '';
 
         for(let i = 0; i <= count; i++) {
+            let tag = this.tags[Math.floor(Math.random() * (2 - 0)) + 0];
             temp += `
-                <div class="fo-menu__card">
+                <div class="fo-menu__card" data-item-tag="${tag}">
                     <!-- default state -->
                     <div class="fo-menu__card-wrapper">
                         <div class="fo-menu__card-content">

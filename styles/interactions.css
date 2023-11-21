@@ -36,6 +36,12 @@
     color: var(--clr-text-primary);
 }
 
+#stacked_pill_1:checked ~ .fo-body [data-item-tag="Specials"],
+#stacked_pill_2:checked ~ .fo-body [data-item-tag="Offers"],
+#stacked_pill_3:checked ~ .fo-body [data-item-tag="Fitlab"] {
+    display: block;
+}
+
 #header_menu:checked ~ .fo-slider__menu {
     right: 0;
 }
@@ -82,7 +88,7 @@ body:has(#order_type:checked) { overflow: hidden; }
     top: 0%;
 }
 
-#mobile_menu_v2:checked ~ .fo-body #search {
+#mobile_menu_v2:checked ~ .fo-body #search_v2 {
     display: block;
 }
 
