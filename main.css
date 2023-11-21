@@ -104,6 +104,7 @@ body {
 }
 
 .fo-btn.fo-btn--primary {
+    border: none;
     color: var(--clr-btn-primary);
     background-color: var(--clr-base-cta);
     border-radius: var(--rounded-pill-sm);
@@ -148,6 +149,30 @@ body {
     display: flex;
     align-items: center;
     padding: 8px 16px;
+}
+
+#search,
+.fo-field__search-wrapper { display: none; }
+
+.fo-field__search-wrapper {
+    padding-top: 5px;
+}
+
+.fo-field__search-btn.fo-field__search-btn {
+    width: 50%;
+    display: inline-block;
+    text-align: center;
+    cursor: pointer;
+}
+
+.trigger {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    cursor: pointer;
 }
 
 .fo-select {

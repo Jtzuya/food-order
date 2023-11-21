@@ -46,6 +46,7 @@
 
     <input type="checkbox" name="overview_close" id="overview_close" hidden>
     <input type="checkbox" name="mobile_menu" id="mobile_menu" hidden>
+    <input type="checkbox" name="mobile_menu_v2" id="mobile_menu_v2" hidden>
 
     <!-- 
         masonry layout: 
@@ -99,7 +100,7 @@
                 </nav>
             </div>
         </header>
-        
+
         <main class="fo-main">
             <!-- slider -->
             <div class="">
@@ -107,15 +108,22 @@
                     <div class="fo-slider">
                         <h2 class="fo-slider__title">Menu</h2>
                         <swiper-container class="mySwiper" init="false" navigation="true">
-                            <swiper-slide>
-                                <label for="mobile_menu" class="fo-slider__card fo-slider__card--menu fo-slider__card--bg-neutral">
-                                    <span class="fo-icon fo-icon--tertiary">
+                            <swiper-slide data-mobile-menu>
+                                <span class="fo-slider__card fo-slider__card--menu fo-slider__card--bg-neutral">
+                                    <label for="mobile_menu_v2" class="trigger"></label>
+                                    <span class="fo-icon fo-icon--tertiary fo-slider__card--active">
                                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path fill-rule="evenodd" clip-rule="evenodd" d="M5.75 10.5C5.75 7.87665 7.87665 5.75 10.5 5.75C13.1234 5.75 15.25 7.87665 15.25 10.5C15.25 13.1234 13.1234 15.25 10.5 15.25C7.87665 15.25 5.75 13.1234 5.75 10.5ZM10.5 4.25C7.04822 4.25 4.25 7.04822 4.25 10.5C4.25 13.9518 7.04822 16.75 10.5 16.75C11.9616 16.75 13.3059 16.2483 14.3703 15.4078C14.3985 15.4512 14.4316 15.4923 14.4697 15.5303L19.4697 20.5303C19.7626 20.8232 20.2374 20.8232 20.5303 20.5303C20.8232 20.2374 20.8232 19.7626 20.5303 19.4697L15.5303 14.4697C15.4923 14.4316 15.4512 14.3985 15.4078 14.3703C16.2483 13.3059 16.75 11.9616 16.75 10.5C16.75 7.04822 13.9518 4.25 10.5 4.25Z" fill="currentColor"/>
                                         </svg>                                    
                                     </span>
-                                    <span class="fo-slider__text fo-slider__text--menu">MENU</span>
-                                </label><!-- card search end -->
+                                    <span class="fo-slider__text fo-slider__text--menu fo-slider__card--active">MENU</span>
+
+                                    <input type="text" name="search" id="search" placeholder="The name of any dish: sushi, burger, etc" class="fo-field__search" title="The name of any dish: sushi, burger, etc">
+                                    <div class="fo-field__search-wrapper">
+                                        <input type="submit" value="Search" class="fo-btn fo-btn--primary fo-field__search-btn">
+                                        <label for="mobile_menu_v2" class="fo-btn fo-btn--primary fo-field__search-btn">Cancel</label>
+                                    </div>
+                                </span>
                             </swiper-slide>
                             <swiper-slide>
                                 <label for="categories_slider_1" class="fo-slider__card fo-slider__card--bg-orange">
@@ -298,7 +306,7 @@
                     </button>
                 </div> -->
 
-            <div class="fo-max-width">
+            <div class="fo-max-width fo-section">
                 <div class="fo-main__content" id="fo_scroll_to">
                     <section style="flex: 1; max-width: 100%; padding: 32px 0 0;">
                         <h1 class="fo-h1 fo-h1--regular">Offers</h1>
@@ -311,7 +319,7 @@
                         </div>
 
                         <!-- set of menus -->
-                        <div class="fo-group">
+                        <div class="fo-group">  
                             <div class="fo-menus fo-menus--1">
                                 <div class="fo-menu__card">
                                     <!-- default state -->
@@ -493,7 +501,7 @@
                                             </span>
                                             <span class="fo-icon">
                                                 <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M10.7895 11.7886L13.5336 9.04453C13.7961 8.78204 13.6102 8.33323 13.239 8.33323L7.75084 8.33323C7.37963 8.33323 7.19372 8.78204 7.45621 9.04453L10.2003 11.7886C10.363 11.9513 10.6268 11.9513 10.7895 11.7886Z" fill="#444349"/>
+                                                    <path d="M10.7895 11.7886L13.5336 9.04453C13.7961 8.78204 13.6102 8.33323 13.2  39 8.33323L7.75084 8.33323C7.37963 8.33323 7.19372 8.78204 7.45621 9.04453L10.2003 11.7886C10.363 11.9513 10.6268 11.9513 10.7895 11.7886Z" fill="#444349"/>
                                                 </svg>                                                    
                                             </span> 
                                         </span>

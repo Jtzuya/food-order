@@ -82,6 +82,25 @@ body:has(#order_type:checked) { overflow: hidden; }
     top: 0%;
 }
 
+#mobile_menu_v2:checked ~ .fo-body #search {
+    display: block;
+}
+
+#mobile_menu_v2:checked ~ .fo-body  .fo-field__search-wrapper {
+    display: flex;
+    align-items: center;
+    column-gap: 8px;
+}
+
+#mobile_menu_v2:checked ~ .fo-body [data-mobile-menu] .trigger {
+    position: unset;
+    display: none;
+}
+
+#mobile_menu_v2:checked ~ .fo-body .fo-slider__card--active {
+    display: none;
+}
+
 @media (max-width: 900px) {
     #overview_close:checked ~ .fo-body .fo-sidebar {
         top: 0;
