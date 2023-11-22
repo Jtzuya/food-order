@@ -170,7 +170,7 @@
         transition: top var(--duration) ease-in-out;
     }
 
-    .mySwiper {
+    .slider__outer-container {
         display: none;
     }
 }
@@ -212,10 +212,6 @@
         display: inherit;
         gap: inherit;
         align-items: inherit;
-    }
-
-    .fo-slider__btn {
-        display: grid!important;
     }
 
     .fo-slider__title {
@@ -269,6 +265,10 @@
 }
 
 @media (max-width: 900px) {
+    * {
+        --content_count: 3.25;
+    }
+
     .fo-sidebar {
         position: fixed;
         left: 0;

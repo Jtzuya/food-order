@@ -20,6 +20,10 @@
     font-size: 62.5%;
     --base-font: 'Erply Ladna', Arial, Helvetica, sans-serif;
 
+    --card-height: 164px;
+    --content_count: 5.25;
+    --card-gap: 16px;
+
     --clr-text-primary: hsl(0, 0%, 18%);
     --clr-text-primary-inverse: #FFFFFF;
     --clr-text-secondary: hsl(250, 4%, 27%);

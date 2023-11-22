@@ -755,6 +755,60 @@ form button,
 }
 
 /* MENU SLIDER */
+.slider__outer-container {
+    position: relative;
+}
+
+.slider {
+    position: relative;
+    height: var(--card-height);
+    width: 100%;
+    overflow: hidden;
+}
+
+.slider__container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: inherit;
+    width: 100%;
+    display: grid;
+    grid-gap: var(--card-gap);
+    grid-auto-flow: column;
+    grid-auto-columns: calc((100% - (var(--content_count) - 1) * var(--card-gap)) / var(--content_count)); /* don't forget to consider the gap */
+    transition: left var(--duration) ease-in-out;
+}
+
+.slider .fo-slider__card {
+    min-width: unset;
+    height: unset;
+}
+
+.fo-slider__btns {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    margin: 0 -16px;
+    z-index: 10;
+}
+
+.fo-slider__btn {
+    display: none!important;
+}
+
+.fo-slider__btns--prev .fo-icon {
+    transform: rotate(180deg);
+}
+
+.fo-slider__btns.fo-slider__btns--prev {
+    left: 0;
+}
+
+.fo-slider__btns.fo-slider__btns--next {
+    right: 0;
+    margin: 0 16px;
+}
+
 .fo-slider__menu {
     position: fixed;
     top: 0;
