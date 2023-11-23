@@ -51,7 +51,7 @@
         --clr-text-primary: hsl(0, 0%, 96%);
         --clr-text-primary-inverse: #000000;
         --clr-text-secondary: hsl(240, 3%, 81%);
-        --clr-text-tertiary: hsl(0, 0%, 96%);
+        --clr-text-tertiary: #B6B6B8;
         --clr-base-cta: hsl(0, 0%, 95%);
         --clr-btn-primary: hsl(0, 0%, 0%);
         --clr-primary-inverse: hsl(0, 0%, 0%);
@@ -62,6 +62,7 @@
         --clr-checkbox: #000000;
         --clr-order-type-card: #2C2C2E;
         --clr-border-border: #4B4B4F;
+        --clr-border-light: #242425;
 
         --clr-bg-drawer: hsl(0, 0%, 0%);
     
@@ -86,6 +87,11 @@
 
     #system_appearance:checked ~ .fo-slider__menu {
         background-color: var(--clr-base-black);
+    }
+
+    #system_appearance:checked ~ .fo-body .fo-form__redirect:hover {
+        background-color: #ffffff;
+        color: #000000;
     }
 
     @media (min-width: 768px) {

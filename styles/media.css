@@ -184,6 +184,10 @@
         transition: top var(--duration) ease-in-out;
     }
 
+    .fo-overview-card__order-additional {
+        display: none;
+    }
+
     .slider__outer-container {
         display: none;
     }

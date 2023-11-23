@@ -3,10 +3,11 @@
         --clr-text-primary: hsl(0, 0%, 96%);
         --clr-text-primary-inverse: #000000;
         --clr-text-secondary: hsl(240, 3%, 81%);
-        --clr-text-tertiary: hsl(0, 0%, 96%);
+        --clr-text-tertiary: #B6B6B8;
         --clr-base-cta: hsl(0, 0%, 95%);
         --clr-primary-inverse: hsl(0, 0%, 0%);
         --clr-border-border: #4B4B4F;
+        --clr-border-light: #242425;
 
         --clr-add-btn: hsl(0, 0%, 100%);
         --clr-add-btn-ico: hsl(0, 0%, 0%);
@@ -48,6 +49,7 @@
         --clr-checkbox: #ffffff;
         --clr-product-card: #ffffff;
         --clr-product-card-border: transparent;
+        --clr-border-light: #E9E9E9;
 
         --clr-bg-drawer: hsl(0, 0%, 100%);
 
@@ -86,5 +88,10 @@
     .fo-body::after {
         height: 150%!important;
         width: 150%!important;
+    }
+    
+    .fo-form__redirect:hover {
+        background-color: #ffffff;
+        color: #000000;
     }
 }
