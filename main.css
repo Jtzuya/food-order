@@ -1288,7 +1288,7 @@ input[type="time"]::-webkit-datetime-edit-ampm-field {
 .fo-order__details {
     margin-bottom: 20px;   
     font-size: 1.8rem;
-    color: var(--clr-text-primary);
+    color: var(--clr-text-secondary);
 }
 
 .fo-order__submit {
