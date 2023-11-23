@@ -328,25 +328,25 @@
                                 </span>
                                 <span class="fo-slider__text">Lasagna</span>
                             </label><!-- card end -->
-                            <a href="#fo_scroll_to" for="categories_slider_5" class="fo-slider__card fo-slider__card--bg-green">
+                            <label href="#fo_scroll_to" for="categories_slider_5" class="fo-slider__card fo-slider__card--bg-green">
                                 <span class="fo-slider__img-wrapper">
                                     <img src="./assets/images/slider-card-img-1.png" alt="Appetizer" class="fo-slider__img">
                                 </span>
                                 <span class="fo-slider__text">For Kids</span>
-                            </a><!-- card end -->
+                            </label><!-- card end -->
                             <label for="categories_slider_6" class="fo-slider__card">
                                 <span class="fo-slider__img-wrapper">
                                     <img src="./assets/images/slider-card-img-1.png" alt="Appetizer" class="fo-slider__img">
                                 </span>
                                 <span class="fo-slider__text">Drink</span>
                             </label><!-- card end -->
-                            <label for="categories_slider_7" class="fo-slider__card">
+                            <label for="categories_slider_1" class="fo-slider__card">
                                 <span class="fo-slider__img-wrapper">
                                     <img src="./assets/images/slider-card-img-1.png" alt="Appetizer" class="fo-slider__img">
                                 </span>
                                 <span class="fo-slider__text">Appetizer</span>
                             </label><!-- card end -->
-                            <label for="categories_slider_8" class="fo-slider__card">
+                            <label for="categories_slider_2" class="fo-slider__card">
                                 <span class="fo-slider__img-wrapper">
                                     <img src="./assets/images/slider-card-img-1.png" alt="Appetizer" class="fo-slider__img">
                                 </span>
@@ -1016,5 +1016,15 @@
 
     <!-- scripts -->
     <script src="./components.js" defer></script>
+    <script>
+        (function() {
+            let menus = document.querySelectorAll('.fo-slider__card')
+            let scrollTo = document.getElementById('fo_scroll_to')
+    
+            menus.forEach(i => { if(!(i.classList.contains('fo-slider__card--menu'))) i.addEventListener('click', clickHandler) })
+
+            function clickHandler() { scrollTo.scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" }) }
+        })()
+    </script>
 </body>
 </html>
