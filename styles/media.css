@@ -98,6 +98,20 @@
         padding-top: 0;
     }
 
+    .fo-product__qty-field,
+    .fo-product__qty-btn {
+        width: 44px;
+        min-width: unset;
+    }
+
+    .fo-product__qty-btn:first-of-type {
+        padding: 16px 8px 16px 16px;
+    }
+
+    .fo-product__qty-btn:last-of-type {
+        padding: 16px 16px 16px 8px;
+    }
+
     .fo-modal__close-btn svg path {
         fill: var(--clr-base-white);
     }
