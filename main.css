@@ -476,7 +476,8 @@ swiper-slide {
     display: flex;
     flex-direction: column;
     -ms-flex-direction: column;
-    /* row-gap: 16px; */
+    row-gap: 16px;
+    gap: 16px;
     border: 1px solid;
     border-color: var(--clr-border);
     box-shadow: var(--shadow);
