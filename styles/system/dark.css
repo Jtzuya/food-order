@@ -1,30 +1,37 @@
 @media (prefers-color-scheme: dark) {
     #system_appearance:not(:checked) ~ * {
-        --clr-text-primary: hsl(0, 0%, 96%);
+        --clr-text-primary: hsl(0, 0%, 96%)!important;
         --clr-text-primary-inverse: #000000;
         --clr-text-secondary: hsl(240, 3%, 81%);
         --clr-text-tertiary: #B6B6B8;
         --clr-base-cta: hsl(0, 0%, 95%);
+        --clr-btn-primary: hsl(0, 0%, 0%);
         --clr-primary-inverse: hsl(0, 0%, 0%);
+    
+        --clr-product-card: hsl(0, 0%, 0%);;
+        --clr-product-card-border: #C2C2C2;
+        --clr-bg-checkbox: #ffffff;
+        --clr-checkbox: #000000;
+        --clr-order-type-card: #2C2C2E;
         --clr-border-border: #4B4B4F;
         --clr-border-light: #242425;
 
+        --clr-bg-drawer: hsl(0, 0%, 0%);
+    
         --clr-add-btn: hsl(0, 0%, 100%);
         --clr-add-btn-ico: hsl(0, 0%, 0%);
-        --clr-product-card: hsl(0, 0%, 0%);
-        --clr-bg-drawer: hsl(0, 0%, 0%);
-
+    
         --clr-border: hsl(240, 3%, 30%);
-        --shadow-border: 0 1px 2px 0 hsla(0, 0%, 100%, 0.05);
+        --shadow: 0 1px 2px 0 hsla(0, 0%, 100%, 0.05);
         
         --accent-light-orange: hsl(37, 22%, 24%);
         --accent-light-blue: hsl(195, 18%, 22%);
         --accent-light-purple: hsl(261, 20%, 22%);
         --accent-light-red: hsl(6, 17%, 22%);
         --accent-light-green: hsl(67, 17%, 21%);
-
+    
         --chevron-bg: hsl(240, 3%, 30%);
-        
+    
         --clr-neutral-50: hsl(270, 3%, 13%);
         --clr-neutral-100:  hsl(240, 3%, 22%);
         --clr-accent-green: #27A64B;
@@ -49,7 +56,6 @@
         --clr-checkbox: #ffffff;
         --clr-product-card: #ffffff;
         --clr-product-card-border: transparent;
-        --clr-border-light: #E9E9E9;
 
         --clr-bg-drawer: hsl(0, 0%, 100%);
 
@@ -79,19 +85,23 @@
         --chevron-bg: hsl(0, 0%, 100%);
     }
 
-    @media (min-width: 768px) {
-        * {
-            --clr-product-card: #2C2C2E;
-        }
-    }
-
     .fo-body::after {
         height: 150%!important;
         width: 150%!important;
+    }
+
+    #system_appearance:checked ~ .fo-body::after {
+        background-color: #fff;
     }
     
     .fo-form__redirect:hover {
         background-color: #ffffff;
         color: #000000;
+    }
+
+    @media (min-width: 768px) {
+        * {
+            --clr-product-card: #2C2C2E;
+        }
     }
 }

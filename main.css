@@ -1552,6 +1552,7 @@ input[type="time"]::-webkit-datetime-edit-ampm-field {
     padding: 16px 36px;
     width: 100%;
     margin: 0 auto;
+    text-decoration: none;
 }
 
 .fo-payment__misc-ico {
