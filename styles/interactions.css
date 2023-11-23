@@ -183,6 +183,11 @@ body:has(#order_type:checked) { overflow: hidden; }
     display: grid;
 }
 
+#mobile_menu_v2:checked ~ .fo-body .fo-slider__card > [for="mobile_menu_v2"] {
+    position: unset;
+    display: none;
+}
+
 #categories_slider_1:checked ~ .fo-body .fo-menus--1,
 #categories_slider_2:checked ~ .fo-body .fo-menus--2,
 #categories_slider_3:checked ~ .fo-body .fo-menus--3,
