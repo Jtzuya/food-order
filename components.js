@@ -1,3 +1,31 @@
+/** @description - Card inside menu slider */
+class CardMenu extends HTMLElement {
+    constructor() {
+        super();
+        this.color  = ''
+        this.img    = ''
+        this.text   = ''
+        this.attr   = ''
+    }
+
+    connectedCallback() {
+        this.color = this.getAttribute('color')
+        this.img = this.getAttribute('img')
+        this.text = this.getAttribute('text')
+        this.attr = this.getAttribute('attr')
+
+        this.innerHTML = `
+            <div class="fo-slider__card fo-slider__card--bg-${this.color}">
+                <label for="categories_slider_${this.attr}" class="trigger"></label>
+                <span class="fo-slider__img-wrapper">
+                    <img src="${this.img}" alt="${this.text}" class="fo-slider__img">
+                </span>
+                <span class="fo-slider__text">${this.text}</span>
+            </div><!-- end of card -->
+        `
+    }
+}
+
 /*** @description - Custom component for set of menus */
 class ProductMenus extends HTMLElement {
     constructor() { 
@@ -54,4 +82,5 @@ class ProductMenus extends HTMLElement {
     }
 }
 
+customElements.define('card-menu', CardMenu)
 customElements.define('product-menus', ProductMenus)

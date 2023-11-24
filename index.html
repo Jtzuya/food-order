@@ -44,12 +44,6 @@
     <input type="checkbox" name="mobile_menu" id="mobile_menu" hidden>
     <input type="checkbox" name="mobile_menu_v2" id="mobile_menu_v2" hidden>
 
-    <!-- 
-        masonry layout: 
-        https://codepen.io/iamsaief/pen/jObaoKo 
-        https://codepen.io/qq7886/pen/MypEvw
-    -->
-
     <div class="fo-body"> 
         <header class="fo-header">
             <div class="fo-header__wrapper fo-max-width">
@@ -110,7 +104,7 @@
                         <input type="radio" name="slider" id="slider_4" hidden>
                         <input type="radio" name="slider" id="slider_5" hidden>
                         <input type="radio" name="slider" id="slider_6" hidden>
-
+                        
                         <div class="slider__outer-container">
                             <div class="slider">
                                 <div class="slider__container">
@@ -136,70 +130,45 @@
                                         </span>
                                         <span class="fo-slider__text">Appetizer</span>
                                     </div><!-- end of card -->
-    
-                                    <div class="fo-slider__card fo-slider__card--bg-blue">
-                                        <label for="categories_slider_2" class="trigger"></label>
-                                        <span class="fo-slider__img-wrapper">
-                                            <img src="./assets/images/slider-card-img-1.png" alt="Appetizer" class="fo-slider__img">
-                                        </span>
-                                        <span class="fo-slider__text">Salad Soup</span>
-                                    </div><!-- end of card -->
-    
-                                    <div class="fo-slider__card fo-slider__card--bg-purple">
-                                        <label for="categories_slider_3" class="trigger"></label>
-                                        <span class="fo-slider__img-wrapper">
-                                            <img src="./assets/images/slider-card-img-1.png" alt="Appetizer" class="fo-slider__img">
-                                        </span> 
-                                        <span class="fo-slider__text">Risotto</span>
-                                    </div><!-- end of card -->
-    
-                                    <div class="fo-slider__card fo-slider__card--bg-red">
-                                        <label for="categories_slider_4" class="trigger"></label>
-                                        <span class="fo-slider__img-wrapper">
-                                            <img src="./assets/images/slider-card-img-1.png" alt="Appetizer" class="fo-slider__img">
-                                        </span>
-                                        <span class="fo-slider__text">Lasagna</span>
-                                    </div><!-- end of card -->
-    
-                                    <div class="fo-slider__card fo-slider__card--bg-green">
-                                        <label for="categories_slider_5" class="trigger"></label>
-                                        <span class="fo-slider__img-wrapper">
-                                            <img src="./assets/images/slider-card-img-1.png" alt="Appetizer" class="fo-slider__img">
-                                        </span>
-                                        <span class="fo-slider__text">For Kids</span>
-                                    </div><!-- end of card -->
-    
-                                    <div class="fo-slider__card">
-                                        <label for="categories_slider_6" class="trigger"></label>
-                                        <span class="fo-slider__img-wrapper">
-                                            <img src="./assets/images/slider-card-img-1.png" alt="Appetizer" class="fo-slider__img">
-                                        </span>
-                                        <span class="fo-slider__text">Drink</span>
-                                    </div><!-- end of card -->
-    
-                                    <div class="fo-slider__card fo-slider__card--bg-orange">
-                                        <label for="categories_slider_1" class="trigger"></label>
-                                        <span class="fo-slider__img-wrapper">
-                                            <img src="./assets/images/slider-card-img-1.png" alt="Appetizer" class="fo-slider__img">
-                                        </span>
-                                        <span class="fo-slider__text">Appetizer</span>
-                                    </div><!-- end of card -->
-    
-                                    <div class="fo-slider__card fo-slider__card--bg-blue">
-                                        <label for="categories_slider_2" class="trigger"></label>
-                                        <span class="fo-slider__img-wrapper">
-                                            <img src="./assets/images/slider-card-img-1.png" alt="Appetizer" class="fo-slider__img">
-                                        </span>
-                                        <span class="fo-slider__text">Salad Soup</span>
-                                    </div><!-- end of card -->
-    
-                                    <div class="fo-slider__card fo-slider__card--bg-purple">
-                                        <label for="categories_slider_3" class="trigger"></label>
-                                        <span class="fo-slider__img-wrapper">
-                                            <img src="./assets/images/slider-card-img-1.png" alt="Appetizer" class="fo-slider__img">
-                                        </span> 
-                                        <span class="fo-slider__text">Risotto</span>
-                                    </div><!-- end of card -->
+
+                                    <!-- 
+                                        Designed a component to prevent code bloating.
+
+                                        Copy the code to replace the card component that is generated using Javascript to static HTML
+                                        >>>> START BELOW
+                                            <div class="fo-slider__card fo-slider__card--bg-[desired color]">
+                                                <label for="categories_slider_[num]" class="trigger"></label>
+                                                <span class="fo-slider__img-wrapper">
+                                                    <img src="[image source]" alt="[card heading]" class="fo-slider__img">
+                                                </span>
+                                                <span class="fo-slider__text">[card heading]</span>
+                                            </div>
+                                        <<<< END ABOVE
+
+                                        Attributes:
+
+                                        color:
+                                            Available card colors: neutral | blue | purple | red | green
+                                            To add new color(s), goto [main.css] file and search "fo-slider__card--bg-[any of the colors above]" and input your new color
+
+                                        img: 
+                                            Insert the path/link where the image you want to add is located.
+
+                                        text:
+                                            Insert text desired
+                                        
+                                        attr: 
+                                            This determines which set of products will be displayed based on the category chosen.
+                                            Available attr: 1 | 2 | 3 | 4 | 5 | 6
+                                    -->
+                                    <card-menu color="blue" img="./assets/images/slider-card-img-1.png" text="Salad Soup" attr="2"></card-menu>
+                                    <card-menu color="purple" img="./assets/images/slider-card-img-1.png" text="Risotto" attr="3"></card-menu>
+                                    <card-menu color="red" img="./assets/images/slider-card-img-1.png" text="Lasagna" attr="4"></card-menu>
+                                    <card-menu color="green" img="./assets/images/slider-card-img-1.png" text="For Kids" attr="5"></card-menu>
+                                    <card-menu color="blue" img="./assets/images/slider-card-img-1.png" text="Drink" attr="6"></card-menu>
+                                    <card-menu color="orange" img="./assets/images/slider-card-img-1.png" text="Appetizer" attr="1"></card-menu>
+                                    <card-menu color="blue" img="./assets/images/slider-card-img-1.png" text="Salad Soup" attr="2"></card-menu>
+                                    <card-menu color="purple" img="./assets/images/slider-card-img-1.png" text="Risotto" attr="3"></card-menu>
                                 </div>
                             </div>
 
@@ -363,7 +332,7 @@
                         <!-- slider of pill shaped menus -->
 
                         <div class="fo-stacked-pills">
-                            <label for="stacked_pill_1" class="fo-pill">Specials</label>
+                            <label for="stacked_pill_1" role="button" class="fo-pill">Specials</label>
                             <label for="stacked_pill_2" role="button" class="fo-pill">Offers</label>
                             <label for="stacked_pill_3" role="button" class="fo-pill">Fitlab</label>
                         </div>

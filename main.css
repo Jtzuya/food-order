@@ -874,7 +874,6 @@ form button,
 
 .slider .fo-slider__card {
     min-width: unset;
-    height: unset;
 }
 
 .fo-slider__btns {
@@ -1544,6 +1543,7 @@ input[type="time"]::-webkit-datetime-edit-ampm-field {
 .fo-payment__misc {
     background-color: transparent;
     border: 1px solid var(--clr-text-secondary);
+    color: var(--clr-text-primary-inverse);
     border-radius: 56px;
     display: flex;
     justify-content: center;
@@ -1558,6 +1558,7 @@ input[type="time"]::-webkit-datetime-edit-ampm-field {
 .fo-payment__misc-ico {
     display: grid;
     place-items: center;
+    color: var(--clr-text-secondary);
 }
 
 .fo-payment__btn-text {
@@ -1689,7 +1690,7 @@ input[type="time"]::-webkit-datetime-edit-ampm-field {
     width: 100%;
     border-radius: 56px;
     padding: 16px;
-    background-color: var(--clr-base-black);
+    background-color: var(--clr-base-cta);
     font-size: 2rem;
     color: var(--clr-text-primary-inverse);
     text-align: center;
@@ -1761,6 +1762,7 @@ input[type="time"]::-webkit-datetime-edit-ampm-field {
 .fo-table__row--extras {
     border-top: 1px solid var(--clr-border-light);
     width: max-content;
+    color: var(--clr-text-primary);
 }
 
 .fo-table__row--extras.fo-table__row--extras-last {
@@ -1810,7 +1812,7 @@ input[type="time"]::-webkit-datetime-edit-ampm-field {
 }
 
 .fo-payment__btn-text.fo-payment__btn-text--light {
-    color: var(--clr-base-white);
+    color: var(--clr-text-primary-inverse);
 }
 
 /* QR scanner */
@@ -1836,7 +1838,7 @@ input[type="time"]::-webkit-datetime-edit-ampm-field {
     max-height: 701px;
     border-radius: 32px;
     padding: 24px;
-    background-color: var(--clr-base-white);
+    background-color: var(--clr-text-primary-inverse);
     position: relative;
 }
 
